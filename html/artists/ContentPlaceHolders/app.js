@@ -19,8 +19,8 @@ function getData() {
 
  .77885.331734386911950/1238430636242316/?type=3Lenins-exile-in-Perth-1925-1953</p>
 
-His work is held in the collections of Museo Internacional de Electrografia Universidad de Castilla la Mancha, Spain; The University of Liverpool, UK, the Liverpool School of Architecture, UK, Art Bank, Wesfarmers, Western  Australia, Edith Cowan University, and Qingdao Art Gallery, the People’s Republic of China.`;
-  profile_img.innerHTML = ` <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="">`;
+<p>His work is held in the collections of Museo Internacional de Electrografia Universidad de Castilla la Mancha, Spain; The University of Liverpool, UK, the Liverpool School of Architecture, UK, Art Bank, Wesfarmers, Western  Australia, Edith Cowan University, and Qingdao Art Gallery, the People’s Republic of China.`;
+  profile_img.innerHTML = ` <img src="https://randomuser.me/api/portraits/women/45.jpg" alt=""></p>`;
   name.textContent = `Christopher Crouch`;
   date.textContent = `August 1, 2021`;
 
