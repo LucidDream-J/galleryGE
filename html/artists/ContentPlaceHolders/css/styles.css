@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: rgb(93, 134, 121);
+    background-color: #a89f9f;
     font-family: "Roboto",sans-serif;
     display: flex;
     align-items:flex-start;
