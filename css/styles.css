@@ -25,6 +25,7 @@
     justify-content: end;
     align-items: center;
     color: var(--light);
+    position: relative;
     /* font-size: 2.5rem; */
 }
 .hero.japanprint{
@@ -37,7 +38,7 @@
     background-image: url(../images/artistsImages/instal71585.jpg);
 }
 .hero.artistBottom{
-    background-image: url(../images/artistsImages/Instalationoverhead1B.jpg);
+    background-image: url(../images/artists.jpg);
 }
 .hero.artBook{
     background-image: url(../images/artistsImages/Instalationoverhead1B.jpg);
