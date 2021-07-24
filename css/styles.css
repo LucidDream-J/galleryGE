@@ -49,6 +49,12 @@
 .hero.courtasans{
     background-image: url(../images/artistsImages//japanesePrints/250PrintsBooks/PER4.jpg);
 }
+.hero.indoBottom{
+    background-image: url(../images/artistsImages/indonesiaArt/2.jpg);
+}
+.hero.indoTop{
+    background-image: url(../images/artistsImages/indonesiaArt/14back.jpg);
+}
 
 /* .hero h1{
     text-shadow:  1px 1px 5px rgba(0, 0, 0, 0.5);
