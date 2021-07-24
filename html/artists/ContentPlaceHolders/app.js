@@ -14,7 +14,7 @@ setTimeout(() => {
 }, 2000);
 
 function getData() {
-  header.innerHTML = `<img class="card-img-top" src="../../../images/artistsImages/crouch/DS5.jpg" alt="">`;
+  header.innerHTML = `<img class="card-img-top" src="../../../images/artistsImages/crouch/DS5.jpg" alt="Art image">`;
   title.innerText = `Dr Christopher Crouch`;
   excerpt.innerHTML = ` <p> Dr Christopher Crouch has held professorial roles in Australian and Chinese art schools and his work is held in public and private collections in Australia. This is his seventh exhibition with Gallery East.</p>
 <p>His past work has focused on parkland and urban trees, investigating their relationship to both nature and their social context. Critics have described him as ‘a consummate draughtsman’, drawing ironically on a realist tradition and making work that resembles ‘socialist realism in a slow motion car crash’.
@@ -37,6 +37,7 @@ The Ouilipo group’s central premise was to invert the usual trope of the indiv
 The illustrations for lines of poetry by Delmore Schwartz are much more straight forward. I spend more time with books than I do in art galleries, and the world of illustration is less intimidated by US cultural hegemony than painting. It is partly to do with the illustrations size I think. An illustration is always slightly apologetic, a discreet adjunct to other more serious issues. Being slight and nimble it can slip by the guards that protect the world of aesthetic importance.
 
 Residing in New York, the child of Romanian migrant parents (the apocryphal story is he was named after a local grocery store), Schwartz resisted the totalising nature of that urban juggernaut of a city’s power by escaping into a neurotic interior world filled with childhood memories of the family, the city experienced through a migrant’s eyes, nature and classical culture. A friend who loves to argue against the tendency to think of art as a universalising experience suggested the collection Summer Knowledge for me to illustrate. He was offended by the assumption that the idea of a North American summer was a shared one and has always been irritated by the narcissism and cultural specificity of Schwartz’s poems. My Oulipian task was to take some lines and using Nikolai Chernyshevsky’s idea of the dialogue between the particular and the universal, make the world as seen through Schwarz’s lens relevant to an Australian audience. A deeply ironic task set by a Russian to an Englishman. From both our perspectives, kitsch is the collective aesthetic at work, and it can be turned against itself and used as a martial art. My work has been previously described as the aftermath of a crash between socialist realism and a ladybird book. I think the littered roadside corpses of the gumnut babies also need mention.
+
 The paintings on show are meant to be enjoyed, irritatingly pretentious as they may seem. Separated from their intellectual origins the images should work quite happily as wallpaper or printed on tea towels. It is entirely the reader’s prerogative to decipher them as they wish, and I would happily embrace any reading of them in what currently appear to be the end times. " `;
 
   animated_bgs.forEach((bg) => {
