@@ -21,7 +21,7 @@ function getData() {
 </p>
 
 <p>His work is held in the collections of Museo Internacional de Electrografia Universidad de Castilla la Mancha, Spain; The University of Liverpool, UK, the Liverpool School of Architecture, UK, Art Bank, Wesfarmers, Western  Australia, Edith Cowan University, and Qingdao Art Gallery, the People’s Republic of China.`;
-  profile_img.innerHTML = ` <img src="../../../images/lenin.jpg" alt=""></p>`;
+  profile_img.innerHTML = `<img src="../images/lenin.jpg" alt="artist"></p>`;
   name.textContent = `Christopher Crouch`;
   date.textContent = `August 1, 2021`;
 
