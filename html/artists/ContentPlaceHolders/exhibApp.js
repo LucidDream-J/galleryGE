@@ -14,9 +14,9 @@ setTimeout(() => {
 }, 2000);
 
 function getData() {
-  header.innerHTML = `<img id="exhibition-image" class="card-img-top" src="./artists/ContentPlaceHolders/images/crouch/1.jpg" alt="Art image">`;
+  header.innerHTML = `<img id="exhibition-image" class="card-img-top" src="../images/artistsImages/crouch/1.jpg" alt="Art image">`;
   title.innerText = `Dr Christopher Crouch`;
-  excerpt.innerHTML = ` <p> Dr Christopher Crouch has held professorial roles in Australian and Chinese art schools and his work is held in public and private collections in Australia. This is his seventh exhibition with Gallery East.</p>
+  excerpt.innerHTML = `<p>Dr. Christopher Crouch has held professorial roles in Australian and Chinese art schools and his work is held in public and private collections in Australia. This is his seventh exhibition with Gallery East.</p>
 <p>His past work has focused on parkland and urban trees, investigating their relationship to both nature and their social context. Critics have described him as ‘a consummate draughtsman’, drawing ironically on a realist tradition and making work that resembles ‘socialist realism in a slow motion car crash’.
 </p>
 
