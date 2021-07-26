@@ -1,3 +1,10 @@
+const zoom = document.querySelectorAll(".fade");
+zoom.forEach((element) => {
+  element.addEventListener("click", () => {
+    element.classList.toggle("zoomIn");
+  });
+});
+
 var slideIndex = 1;
 showSlides(slideIndex);
 
