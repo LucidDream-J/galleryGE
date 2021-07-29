@@ -22,7 +22,7 @@
     max-width: 1200px;
     height:auto;
     max-height: 900px;
-    margin-top: 50px;
+    margin-top: 150px;
     background-color: white;
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, .2);
     border-radius: 13px;
@@ -47,9 +47,12 @@
     display: block;
     padding: 20px;
 }
-.popup__left h3{
-    padding-bottom: 80px;
-    text-align: left;
+.popup__content h3{
+    padding-bottom: 5px;
+    text-align: center;
+}
+.popup__left div.space {
+    padding-bottom: 150px;
 }
 
 .popup__right {
