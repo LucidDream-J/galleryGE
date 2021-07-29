@@ -1,7 +1,7 @@
 
 
 .popup {
-    height: 100vh;
+    height: 100%;
     width: 100%;
     position: fixed;
     top: 0;
@@ -42,14 +42,18 @@
 }
 
 .popup__left {
-    width: 33.333333%;
+    width: 66.333333%;
     display: table-cell;
     display: block;
     padding: 20px;
 }
+.popup__left h3{
+    padding-bottom: 80px;
+    text-align: left;
+}
 
 .popup__right {
-    width: 66.6666667%;
+    width: 33.6666667%;
     display: table-cell;
     vertical-align: middle;
     padding: 3rem 5rem;
@@ -107,4 +111,8 @@
     display: inline-block;
     transition: all .2s;
     line-height: 1;
+    }
+
+    .popup__close:hover{
+        color: rgb(247, 75, 75);
     }
