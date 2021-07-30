@@ -38,7 +38,7 @@
   }
   
   /* Caption text */
-  .text {
+  .slideshow-container .text {
     color: #4e4b4b;
     font-size: 15px;
     padding: 8px 12px;
@@ -52,11 +52,11 @@
     margin-top: 40px;
   }
 
-  .text p{
+  .slideshow-container .text p{
     text-align: right;
     text-transform: none;
   }
-  .text p span{
+  .slideshow-container .text p span{
     text-align: right;
   }
   
@@ -80,7 +80,11 @@
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
-  }
+    -webkit-transition: background-color 0.6s ease;
+    -moz-transition: background-color 0.6s ease;
+    -ms-transition: background-color 0.6s ease;
+    -o-transition: background-color 0.6s ease;
+}
   
   .activePop, .dot:hover {
     background-color: #717171;
