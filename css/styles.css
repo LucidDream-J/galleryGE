@@ -457,6 +457,19 @@ body {
     flex-direction: column;
     align-items: center;
 }
+.service a:link,
+.service a:visited {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.service a:hover,
+.service a:active {
+    transform: translateY(-3px);
+    color: #ff0040;
+}
+
+
 
 .icons {
     height: 100px;
