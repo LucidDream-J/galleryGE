@@ -7,7 +7,7 @@
     --light: #ffffff;
     --gray: #757575;
     --lightGray:#c8c4c1;
-    --redGray:#c8c1c1;
+    --redGray:#f3dede;
     --white: #ffffff;
 }
 
@@ -674,6 +674,11 @@ h3 {
     backdrop-filter: blur(2rem);
 }
 
+.meshGradient{
+    /* background-image: url("../images/mesh-gradient.png"); */
+    background-image: cross-fade("../images/mesh-gradient.png");
+}
+
 /* OPENING PAGE GE CONTENT */
 
 .container-Ge {
@@ -694,11 +699,16 @@ h3 {
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
     cursor: pointer;
     background-color: white;
-    transition: background-color 400ms ease-out;
+    transition: all 400ms ease-out;
+    -webkit-transition: all 400ms ease-out;
+    -moz-transition: all 400ms ease-out;
+    -ms-transition: all 400ms ease-out;
+    -o-transition: all 400ms ease-out;
 }
 
 .destination:hover,
 .destination:active {
+    transform: translateY(-3px);
     background-color: #ff0040;
     color: white;
 }
