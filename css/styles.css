@@ -410,16 +410,16 @@ body {
     font-size: 1.8rem;
 }
 
-.social-nav a[href*="facebook.com"]::before {
-    content: "\f39e";
+.social-nav a[href*="artstation.com/"]::before {
+    content: "\f77a";
 }
 
-.social-nav a[href*="twitter.com"]::before {
-    content: "\f099";
+.social-nav a[href*="etsy.com/"]::before {
+    content: "\f2d7";
 }
 
-.social-nav a[href*="instagram.com"]::before {
-    content: "\f16d";
+.social-nav a[href*="linkedin.com"]::before {
+    content: "\f08c";
 }
 
 .social-nav a span {
@@ -483,6 +483,9 @@ body {
 
 .icons i {
     font-size: 2rem;
+}
+.icons i.small{
+    font-size: 1.75rem;
 }
 
 form {
