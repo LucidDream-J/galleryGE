@@ -705,6 +705,7 @@ h3 {
     margin-top: 20px;
 }
 
+
 .destination {
     box-sizing: border-box;
     min-width: 275px;
@@ -767,7 +768,7 @@ h3 {
 
 .container-Ge p {
     padding: 10px;
-    text-align: left;
+    text-align: center;
 }
 
 .content-Ge h1 {
