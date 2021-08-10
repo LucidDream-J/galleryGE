@@ -469,7 +469,13 @@ body {
     color: #ff0040;
 }
 
-
+.services .content{
+    margin: auto;
+    width: 80%;
+    max-width: 800px;
+    min-width: 420px;
+   
+}
 
 .icons {
     height: 100px;
