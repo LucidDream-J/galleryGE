@@ -488,7 +488,7 @@ body {
     min-width: 360px;
    
 }
-
+/* /////////Added here for  POPUP component//////////// */
 .popup__left a:link {
     color: #181616;
 }
@@ -498,7 +498,15 @@ body {
     color: #fbfbfa;
 }
 
+.popup__left.content{
+    margin: auto;
+    width: 90%;
+    max-width: 800px;
+    min-width: 360px;
+   
+}
 
+/* ///////// End of  POPUP component //////////// */
 
 .icons {
     height: 100px;
