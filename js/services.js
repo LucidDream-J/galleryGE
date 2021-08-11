@@ -10,29 +10,29 @@ const content = [
            
             <table class="content" border="0" width="80%"" max-width="800"min-width="360">
               <tr> 
-                <td width="423"> <p align="justify"><font size="3" face="Arial"><font color="#666666" face="Verdana, Arial, Helvetica, sans-serif">If 
+                <td width="423"> <p align="left"><font size="3" face="Arial"><font color="#666666" face="Verdana, Arial, Helvetica, sans-serif">If 
                     you would like to purchase one or more of the art works you have 
                     several options: </font><font color="#CC0000"><br>
                     <br>
                     </font><font color="#666666" face="Verdana, Arial, Helvetica, sans-serif"> 
                     Contact us by e-mail, mail or fax (see details on how to contact 
                     us at the bottom left and below). </font></font></p>
-                  <p align="justify"><font size="3" face="Arial"><font color="#666666" face="Verdana, Arial, Helvetica, sans-serif">We 
+                  <p align="left"><font size="3" face="Arial"><font color="#666666" face="Verdana, Arial, Helvetica, sans-serif">We 
                     are pleased to provide fully detailed condition reports for Japanese 
                     prints. All purchased Japanese prints are accompanied by a Certificate 
                     of Authenticity.</font></font></p>
-                  <p align="justify"><font color="#666666" face="Verdana, Arial, Helvetica, sans-serif"><b><font size="3">NOTE:</font></b> 
+                  <p align="left"><font color="#666666" face="Verdana, Arial, Helvetica, sans-serif"><b><font size="3">NOTE:</font></b> 
                     <font size="3"> All prices quoted on this web site for prints 
                     are in Australian dollars, <em>but do not include</em> packing, 
                     postage or insurance. We are pleased to quote the costs of transporting 
                     a painting, sculpture, glass or ceramic form.</font></font></p>
-                  <p align="justify"> <font face="Arial, Helvetica, sans-serif">
+                  <p align="left"> <font face="Arial, Helvetica, sans-serif">
                       </font><span class="style2"><strong>PAYMENT</strong> can be made to us through our account with<strong> PayPal </strong>Payment may also be made by Pay Pal (our account = admin@galleryeast.com.au). We</span><span class="style2"> also accept payment by international money order 
                       or <strong>electronic transfer</strong> into our account; as well as credit card 
                       (<strong> American Express, Visa or Mastercard:</strong> for security reasons the usual information 
                       (name on the card, card number and expiry date) should best be 
                   forwarded to us in two halves in two separate e mails).</span></p>
-                  <p align="justify"><font color="#666666" face="Verdana, Arial, Helvetica, sans-serif"><b><font size="3">CUSTOMS:</font></b> 
+                  <p align="left"><font color="#666666" face="Verdana, Arial, Helvetica, sans-serif"><b><font size="3">CUSTOMS:</font></b> 
                     <font size="3"> You may be subject to import duties and taxes, 
                     which are levied once the package reaches your country. Additional 
                     charges for customs clearance must be borne by you; we have no 
@@ -42,16 +42,18 @@ const content = [
                     <br>
                     <br>
                   </p>
-                  <table width="100%" border="1" bgcolor="#999999">
+                  <table width="100%" border="0" bgcolor="#ff0000">
                     <tr> 
                       <td><font color="#FFFFFF" size="2" face="Verdana, Arial, Helvetica, sans-serif">Please 
                         Email Your enquiry/order to<a href="mailto:admin@galleryeast.com.au"> 
                         admin@galleryeast.com.au</a></font></td>
                     </tr>
                   </table>
-                  <p align="justify"></td>
+                  <p align="left"></p></td>
               </tr>
-            </table>  <div class="space"></div>`,
+            </table> <div class="space"></div> 
+            <br><br>
+            `,
 
   ` <h1 class="subHead">
               Valuations
