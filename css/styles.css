@@ -440,6 +440,14 @@ body {
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
     border-radius: 1rem;
 }
+.directors-content{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    max-width: 700px;
+    min-width: 320px;
+}
 
 @media (min-width: 768px) {
     .services-container {
@@ -473,7 +481,7 @@ body {
     margin: auto;
     width: 80%;
     max-width: 800px;
-    min-width: 420px;
+    min-width: 360px;
    
 }
 
