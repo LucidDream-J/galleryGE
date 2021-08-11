@@ -8,7 +8,7 @@ const content = [
               Buying Art
           </h1>
            
-            <table class="content" border="0" width="80%"" max-width="800"min-width="360">
+            <table  border="0" width="80%"" max-width="800"min-width="360">
               <tr> 
                 <td width="423"> <p align="left"><font size="3" face="Arial"><font color="#666666" face="Verdana, Arial, Helvetica, sans-serif">If 
                     you would like to purchase one or more of the art works you have 
@@ -51,14 +51,14 @@ const content = [
                   </table>
                   <p align="left"></p></td>
               </tr>
-            </table> <div class="space"></div> 
-            <br><br>
+            </table>
+        
             `,
 
   ` <h1 class="subHead">
               Valuations
           </h1>
-        <table class="content" border="0" width="80%"" max-width="800"min-width="360">
+        <table border="0" width="80%"" max-width="800"min-width="360">
               <tr>
                 <td width="100%" valign="top">
                   <table width="90%" cellspacing="0" cellpadding="0">
@@ -185,7 +185,7 @@ const content = [
                             <font color="#333333" size="2" face="Arial">What
                               is the Cultural Gifts Program?</font>
                           </span></u></em> </p>
-                    <p align="justify">
+                    <p align="left">
                       <font color="#666666" size="2" face="Arial">The
                         Cultural Gifts Program encourages gifts of significant cultural
                         items to public art galleries, museums and libraries by offering
@@ -198,7 +198,7 @@ const content = [
                         examines donations to ensure they conform with the program's
                         requirements.</font>
                     </p>
-                    <p align="justify">
+                    <p align="left">
                       <font color="#666666" size="2" face="Arial">Make
                         sure the public collecting institution of your choice is eligible
                         to participate in this program and that it wants to accept your
@@ -211,7 +211,7 @@ const content = [
                         part or all of such fees - their staff will advise you about
                         this.</font>
                     </p>
-                    <p align="justify">
+                    <p align="left">
                       <font color="#666666" size="2" face="Arial">Following
                         valuation, present your donation to the institution, together
                         with a completed certificate of donation (available from the
@@ -238,7 +238,7 @@ const content = [
                               should I have valuations carried out?</font>
                           </span></em></u></p>
                     <blockquote>
-                      <p align="justify">
+                      <p align="left">
                         <font color="#666666" size="2" face="Arial">Valuations
                           must be done within 90 days before or after the date on which
                           the donation is made to reflect the current market value.</font>
@@ -249,7 +249,7 @@ const content = [
                               I have to use particular valuers?</font>
                           </span></em></u></p>
                     <blockquote>
-                      <p align="justify">
+                      <p align="left">
                         <font color="#666666" size="2" face="Arial">You
                           should approach the institution to help you choose suitable
                           valuers. The institution will know which valuers are approved,
@@ -261,7 +261,7 @@ const content = [
                               I claim a tax deduction for the cost of the valuations?</font>
                           </span></em></u></p>
                     <blockquote>
-                      <p align="justify">
+                      <p align="left">
                         <font color="#666666" size="2" face="Arial">Yes,
                           if the valuations are obtained specifically for this program
                           they are a tax related expense for the purposes of section
@@ -273,7 +273,7 @@ const content = [
                               about capital gains tax?</font>
                           </span></em></u></p>
                     <blockquote>
-                      <p align="justify">
+                      <p align="left">
                         <font color="#666666" size="2" face="Arial">If
                           you acquired the donated item on or after 20 September 1985,
                           Capital Gains Tax may apply. Your accountant or tax agent
@@ -295,7 +295,7 @@ const content = [
                           width="8" height="8"></td>
                       <td valign="top" width="100%">
                         <blockquote>
-                          <p align="justify">
+                          <p align="left">
                             <font color="#666666" size="2" face="Arial">The
                               deduction claimed is greater than the amount needed to
                               reduce your taxable income to nil for the financial year
@@ -311,7 +311,7 @@ const content = [
                           width="8" height="8"></td>
                       <td valign="top" width="100%">
                         <blockquote>
-                          <p align="justify">
+                          <p align="left">
                             <font color="#666666" size="2" face="Arial">The
                               gift is given with conditions that prevent or delay the
                               receiving institution having clear title, custody and
@@ -328,7 +328,7 @@ const content = [
                           width="8" height="8"></td>
                       <td valign="top" width="100%">
                         <blockquote>
-                          <p align="justify">
+                          <p align="left">
                             <font color="#666666" size="2" face="Arial">The
                               item was acquired by the donor (other than inheritance)
                               within 12 months of the donation, or acquired specifically
@@ -346,7 +346,7 @@ const content = [
                           width="8" height="8"></td>
                       <td valign="top" width="100%">
                         <blockquote>
-                          <p align="justify">
+                          <p align="left">
                             <font color="#666666" size="2" face="Arial">Artists
                               donate their own work, or dealers donate items and the
                               donation is part of their trading stock (that is, it could
@@ -371,7 +371,7 @@ const content = [
                       <font color="#CC0000" face="Arial"><br>
                         Advice for Institution</font>
                     </h4>
-                    <p align="justify">
+                    <p align="left">
                       <font color="#666666" size="2" face="Arial">Confirm
                         with your local branch of the Australian Taxation Office that
                         your institution is eligible to receive gifts in accordance
@@ -392,7 +392,7 @@ const content = [
                       <font color="#CC0000" face="Arial"><br>
                         Points to Remember</font>
                     </h4>
-                    <p align="justify">
+                    <p align="left">
                       <font color="#666666" size="2" face="Arial">Before
                         you accept a proposed gift, ensure that it fits within your
                         acquisition policy and that it is a desirable acquisition for
@@ -425,7 +425,7 @@ const content = [
                 </td>
               </tr>
             </table>
-              <div class="space"></div>`,
+             `,
 
   `
    <h1 class="subHead">
