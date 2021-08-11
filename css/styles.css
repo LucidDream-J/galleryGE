@@ -485,6 +485,17 @@ body {
    
 }
 
+.popup__left a:link {
+    color: #181616;
+}
+
+.popup__left a:hover,
+.popup__left a:active {
+    color: #fbfbfa;
+}
+
+
+
 .icons {
     height: 100px;
     width: 100px;
