@@ -89,12 +89,13 @@ table.content{
 
 
 .popup__text {
+    width: 70%;
     font-size: 1.0 rem;
-    margin-bottom: 4rem;
+    margin: 4rem;
 
-    column-count: 2;
-    column-gap: 4rem;
-    column-rule: 1px solid #999;
+    column-count: 1;
+    /* column-gap: 4rem;
+    column-rule: 1px solid #999; */
 }
 
 /* Open states */
