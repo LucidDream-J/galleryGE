@@ -14,7 +14,7 @@ setTimeout(() => {
 }, 2000);
 
 function getData() {
-  header.innerHTML = `<img id="exhibition-image" class="card-img-top" src="../../../images/artistsImages/black/Cat23-24.jpg" alt="Art image">`;
+  header.innerHTML = `<img id="exhibition-image" class="card-img-top" src="../../../images/artistsImages/black/Cat23_24.jpg" alt="Art image">`;
   title.innerText = `Sandra Black`;
   excerpt.innerHTML = `<table width="100%"  cellspacing="0" cellpadding="0">
         <tr>
