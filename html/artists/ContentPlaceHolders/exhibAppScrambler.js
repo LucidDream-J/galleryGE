@@ -20,7 +20,7 @@ function getData() {
                           <p class="GEaddress">The work in  this exhibition is a continuation of his exploration into his response to the  land&mdash;specifically the Western Australian arid areas-and how that influences  identity. </p>
 <p class="GEaddress" style="text-align:justify;">&nbsp;</p>
 `;
-  profile_img.innerHTML = `<img class="profile-img" src="../../../images/David.jpg" "alt="artist"></p>`;
+  profile_img.innerHTML = `<img class="profile-img" src="../../images/David.jpg" "alt="artist"></p>`;
   name.textContent = `David Forrest`;
   date.textContent = `August 1, 2021`;
 

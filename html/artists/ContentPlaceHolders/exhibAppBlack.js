@@ -43,7 +43,7 @@ function getData() {
         </tr>
       </table>
 `;
-  profile_img.innerHTML = `<img class="profile-img" src="../../../images/David.jpg" "alt="artist"></p>`;
+  profile_img.innerHTML = `<img class="profile-img" src="../../images/David.jpg" "alt="artist"></p>`;
   name.textContent = `David Forrest`;
   date.textContent = `August 1, 2021`;
 
