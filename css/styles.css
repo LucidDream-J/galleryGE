@@ -745,7 +745,7 @@ h3 {
 
 .destination {
     box-sizing: border-box;
-    min-width: 275px;
+    min-width: 320px;
     max-width: 320px;
     height: 420px;
     margin: 20px;
@@ -759,7 +759,21 @@ h3 {
     -ms-transition: all 400ms ease-out;
     -o-transition: all 400ms ease-out;
 }
+.destination.flat{
+    box-shadow:none;
+    border:none;
+}
 
+.destination.flat:hover,
+.destination.flat:active{
+    background-color: #ff0040;
+    color: white;
+    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+}
 .destination:hover,
 .destination:active {
     transform: translateY(-3px);
