@@ -4,13 +4,13 @@
     box-sizing: border-box;
 }
 
-#exhibition-image {
+/* #exhibition-image {
     width: 100% ;
     height: 100%;
     object-fit:cover;
-}
+} */
 
-.cardExhib{
+.cardExhib {
     background-color: #fff;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
@@ -22,44 +22,55 @@
     margin-bottom: 50px;
 
 }
-.card-header{
-    height:fit-content;
+
+/* .card-header {
+    height: fit-content;
     width: fit-content;
     margin: auto;
-}
+} */
 
-.card-header img{
-    object-fit:cover;
+.card-header img {
+    object-fit: cover;
     margin: auto auto;
     height: 100%;
     width: 100%;
 }
 
-.card-content{
+/* .card-img-top {
+    margin-top: 10px;
+    background-color: red;
+    width: 100%
+} */
+
+.card-content {
     background-color: #fff;
     padding: 30px;
 }
-.card-title{
+
+.card-title {
     height: 20px;
     margin: 0;
 }
-.card-excerpt{
+
+.card-excerpt {
     color: #777;
     margin: 10px 0 20px;
 }
-.card-excerpt p{
-    max-width: 800px ;
+
+.card-excerpt p {
+    max-width: 800px;
 }
+
 .author {
     display: flex;
 }
 
-.profile-img{
+.profile-img {
     overflow: hidden;
     height: 40px;
     width: 40px;
     border-radius: 50%;
-    object-fit:fill;
+    object-fit: fill;
 }
 
 .author-info {
@@ -70,22 +81,23 @@
     width: 100px;
 }
 
-.author-info small{
+.author-info small {
     color: #aaa;
     margin-top: 5px;
 }
+
 .statement {
     max-width: 800px;
     margin: 40px auto;
 }
 
-.animated-bg{
-    background-image: linear-gradient(to right, #f6f7f8 0%, #edeef1 10%, #f6f7f8 20%, #f6f7f8 100%) ;
+.animated-bg {
+    background-image: linear-gradient(to right, #f6f7f8 0%, #edeef1 10%, #f6f7f8 20%, #f6f7f8 100%);
     background-size: 200% 100%;
     animation: bgPos 1s linear infinite;
 }
 
-.animated-bg-text{
+.animated-bg-text {
     border-radius: 50px;
     display: inline-block;
     margin: 0;
@@ -96,7 +108,7 @@
 /* EXHIB Btn */
 .btn {
     border: 2px solid #ff0040;
-    background:none;
+    background: none;
     padding: 20px 40px;
     font-size: 25px;
     text-transform: uppercase;
@@ -110,13 +122,13 @@
     min-width: 320px;
     margin-bottom: 50px;
     text-align: center;
-  }
-  
-  .btn:hover {
+}
+
+.btn:hover {
     color: white;
-  }
-  
-  .btn:before {
+}
+
+.btn:before {
     content: "";
     position: absolute;
     bottom: 0;
@@ -128,20 +140,20 @@
     border-radius: 50% 50% 0% 0%;
     height: 0%;
     transition: all 0.5s;
-  }
-  
-  .btn:hover:before {
+}
+
+.btn:hover:before {
     height: 190%;
-  }
+}
 
 /* //////////////////////////////////////// */
 
 @keyframes bgPos {
-    0%{
+    0% {
         background-position: 50% 0;
     }
-    100%{
+
+    100% {
         background-position: -150% 0;
     }
 }
-
