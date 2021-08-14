@@ -16,7 +16,8 @@ setTimeout(() => {
 function getData() {
   header.innerHTML = `<img id="exhibition-image" class="card-img-top" src="../../images/artistsImages/clarke/HC5.jpg" alt="Art image">`;
   title.innerText = `Helen Clarke`;
-  excerpt.innerHTML = `<p>Essay to unavailable</p>
+  excerpt.innerHTML = `<p>The Land of Night Sun</p>
+<p>Essay unavailable</p>
 `;
   profile_img.innerHTML = `<img class="profile-img" src="../../images/David.jpg" "alt="artist"></p>`;
   name.textContent = `David Forrest`;
