@@ -6,8 +6,8 @@
     --dark: #484848;
     --light: #ffffff;
     --gray: #757575;
-    --lightGray:#c8c4c1;
-    --redGray:#f3dede;
+    --lightGray: #c8c4c1;
+    --redGray: #f3dede;
     --white: #ffffff;
 }
 
@@ -444,13 +444,36 @@ body {
     align-content: center;
     flex-wrap: wrap;
 }
-.directors-content{
+
+.directors-content {
+    margin: auto;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
     max-width: 700px;
-    min-width: 320px;
+    min-width: 300px;
+
+}
+
+.david{
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.janis{
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
 @media (min-width: 768px) {
@@ -469,6 +492,7 @@ body {
     flex-direction: column;
     align-items: center;
 }
+
 .service a:link,
 .service a:visited {
     text-decoration: none;
@@ -481,13 +505,14 @@ body {
     color: #ff0040;
 }
 
-.services.content{
+.services.content {
     margin: auto;
     width: 90%;
     max-width: 800px;
     min-width: 360px;
-   
+
 }
+
 /* /////////Added here for  POPUP component//////////// */
 .popup__left a:link {
     color: #181616;
@@ -498,12 +523,12 @@ body {
     color: #fbfbfa;
 }
 
-.popup__left.content{
+.popup__left.content {
     margin: auto;
     width: 90%;
     max-width: 800px;
     min-width: 360px;
-   
+
 }
 
 /* ///////// End of  POPUP component //////////// */
@@ -521,7 +546,8 @@ body {
 .icons i {
     font-size: 2rem;
 }
-.icons i.small{
+
+.icons i.small {
     font-size: 1.75rem;
 }
 
@@ -727,7 +753,7 @@ h3 {
     backdrop-filter: blur(2rem);
 }
 
-.meshGradient{
+.meshGradient {
     /* background-image: url("../images/mesh-gradient.png"); */
     background-image: cross-fade("../images/mesh-gradient.png");
 }
@@ -759,13 +785,14 @@ h3 {
     -ms-transition: all 400ms ease-out;
     -o-transition: all 400ms ease-out;
 }
-.destination.flat{
-    box-shadow:none;
-    border:none;
+
+.destination.flat {
+    box-shadow: none;
+    border: none;
 }
 
 .destination.flat:hover,
-.destination.flat:active{
+.destination.flat:active {
     background-color: #ff0040;
     color: white;
     transform: none;
@@ -774,6 +801,7 @@ h3 {
     -ms-transform: none;
     -o-transform: none;
 }
+
 .destination:hover,
 .destination:active {
     transform: translateY(-3px);
