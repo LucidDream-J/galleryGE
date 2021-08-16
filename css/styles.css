@@ -445,9 +445,11 @@ body {
     flex-wrap: wrap;
 }
 
+/* ///////////////// Durectors/////////////////// */
+
 .directors-content {
     margin: auto;
-    width: 100%;
+    width: 80%;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -457,24 +459,52 @@ body {
 
 }
 
-.david{
+/* {
     background-color: white;
     padding: 30px;
     border-radius: 10px;
+    margin-bottom:20px; 
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+} */
+.david .heading,
+.janis .heading{ 
+width: 70%;
+font-size: 1.4rem;
+
+color:red;
+text-align:left;
 }
+.david img{ 
+    width: 60%;
+  
+}
+.janis img{ 
+    width: 90%;
+  
+}
+.david,
 .janis{
     background-color: white;
-    padding: 30px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: flex-start; 
+     padding: 30px;
+     width:80%;
+     margin-bottom:30px;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
 }
+
+/* ///////////////// End Directors section/////////////////// */
+
+
 
 @media (min-width: 768px) {
     .services-container {
