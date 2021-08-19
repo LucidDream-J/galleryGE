@@ -46,7 +46,7 @@ function getData() {
     
     </div>
   
-      <p><span><a href="mainPaul.htm">Please click on here to read Paul Uhlmann's foreward to the exhibit</a></span></p>
+      <p><span><a href="#"> Paul Uhlmann's foreward to the exhibit -- CNA</a></span></p>
 </div>
 `;
   profile_img.innerHTML = `<img class="profile-img" src="../../images/David.jpg" "alt="artist"></p>`;
