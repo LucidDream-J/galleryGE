@@ -46,7 +46,7 @@ function getData() {
   and  his own artist&rsquo;s book imprint is <em>trembling  hands</em>.</p>
 
 `;
-  profile_img.innerHTML = `<img class="profile-img" src="../../images/symbol.gif" "alt="artist"></p>`;
+  profile_img.innerHTML = `<img class="profile-img" src="../../images/Symbol.gif" "alt="artist"></p>`;
   name.textContent = `Paul Uhlmann`;
   date.textContent = `30 April 2019`;
 

@@ -58,7 +58,7 @@ function getData() {
   </blockquote>
 </div>
 `;
-  profile_img.innerHTML = `<img class="profile-img" src="../../images/symbol.gif" "alt="artist"></p>`;
+  profile_img.innerHTML = `<img class="profile-img" src="../../images/Symbol.gif" "alt="artist"></p>`;
   name.textContent = `David Forrest`;
   date.textContent = `7 March – 2 April  2015`;
 
