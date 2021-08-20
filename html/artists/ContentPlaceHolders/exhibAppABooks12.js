@@ -19,11 +19,9 @@ function getData() {
   excerpt.innerHTML = `
             <p><img src="../../images/artistsImages/artBooks/Swanlogo.jpg" width="50%" height="50%" alt="menu">&nbsp;&nbsp;&nbsp;&nbsp;<img src="../../images/artistsImages/artBooks/Symbol.gif" alt="GElogo" width="20%" height="20%"></p><br>
             <p class="style71">Gallery East in partnership with the City of Swan presents Between the Sheets: 2012 Artists' Books Exhibition</p>
-
-
     <div width="90%" >
-    <h3 align="left">Participating Artists</h3>
-    <blockquote>
+      <h3 align="left">Participating Artists</h3>
+                  <blockquote>
                     <p align="left"><span class="style65">Zimbabwe:</span><span class="style63"> Arthur Azevedo; Virginia Chihota; Tadadzwa Gwetai; Masimba Hwati; 
                             Helen Lieros; Wallen Mapondera; Munyaradzi Mazarire; Gina Maxim; 
                           Gareth Nyandoro </span></p>
@@ -38,11 +36,11 @@ function getData() {
                        Helen Hopcroft; Anne-Maree Hunter; Pam Langdon; Helen Malone; 
                         Elisa Markes-Young; Clyde McGill; Dragica Milunovic; Laura Mitchell; 
                        Janis Nedela; Annette Seeman; Stephen Spurrier &amp; John Teschendorf; 
-Kate Stead &amp; Caitlin Reilly; Kate Thompson &amp; Stephen Smith; Gera Woltjer </p>
+                      Kate Stead &amp; Caitlin Reilly; Kate Thompson &amp; Stephen Smith; Gera Woltjer </p>
                   </blockquote>
 </div>
 `;
-  profile_img.innerHTML = `<img class="profile-img" src="../../images/symbol.gif" "alt="artist"></p>`;
+  profile_img.innerHTML = `<img class="profile-img" src="../../images/symbol.gif" "alt="artist">`;
   name.textContent = `David Forrest`;
   date.textContent = `13 January - 5 February  `;
 
