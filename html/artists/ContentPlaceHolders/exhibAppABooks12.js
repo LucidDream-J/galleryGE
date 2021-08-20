@@ -14,7 +14,7 @@ setTimeout(() => {
 }, 2000);
 
 function getData() {
-  header.innerHTML = `<img id="exhibition-image" class="card-img-top" src="../../images/artistsImages/artBooks/2012/30.jpg" alt="Art image">`;
+  header.innerHTML = `<img id="exhibition-image" class="card-img-top" src="../../images/artistsImages/artBooks/2012/17.jpg" alt="Art image">`;
   title.innerText = `Artists’ Books Exhibition 2012`;
   excerpt.innerHTML = `
             <p><img src="../../images/artistsImages/artBooks/Swanlogo.jpg" width="50%" height="50%" alt="menu">&nbsp;&nbsp;&nbsp;&nbsp;<img src="../../images/artistsImages/artBooks/Symbol.gif" alt="GElogo" width="20%" height="20%"></p><br>
@@ -40,7 +40,7 @@ function getData() {
                   </blockquote>
 </div>
 `;
-  profile_img.innerHTML = `<img class="profile-img" src="../../images/symbol.gif" "alt="artist">`;
+  profile_img.innerHTML = `<img class="profile-img" src="../../images/Symbol.gif" "alt="artist">`;
   name.textContent = `David Forrest`;
   date.textContent = `13 January - 5 February  `;
 
