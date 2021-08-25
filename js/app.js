@@ -2,6 +2,7 @@ const open_btn = document.querySelector(".open-btn");
 const close_btn = document.querySelector(".close-btn");
 const nav = document.querySelectorAll(".nav");
 const floatingBTN = document.querySelector(".footerBtn");
+const buyArt = document.getElementById("buying");
 
 // attach an event listener
 floatingBTN.addEventListener("click", (e) => {
@@ -29,6 +30,15 @@ open_btn.addEventListener("click", () => {
 
 close_btn.addEventListener("click", () => {
   nav.forEach((nav_el) => nav_el.classList.remove("visible"));
+});
+
+///////////////////////////// Not Available message///////////////////////////
+
+document.querySelectorAll(".message").forEach((msg) => {
+  msg.addEventListener("mouseover", () => {
+    msg.classList.toggle("change");
+    // msg.nextElementSibling.classList.toggle("change");
+  });
 });
 
 // Hearts//////////////////////////////////////////////////
@@ -76,4 +86,19 @@ close_btn.addEventListener("click", () => {
 //   setTimeout(() => {
 //     heart.remove();
 //   }, 1000);
+// }
+////////////////////////////////// CLIENT GEOLOCATION ///////////////////////////////////////////////////
+// if ("geolocation" in navigator) {
+//   /* geolocation is available */
+//   console.log("geolocation is available ");
+//   navigator.geolocation.getCurrentPosition((position) => {
+//     console.log(position);
+//     const lat = position.coords.latitude;
+//     const lon = position.coords.longitude;
+//     document.getElementById("latitude").textContent = lat;
+//     document.getElementById("longitude").textContent = lon;
+//   });
+// } else {
+//   /* geolocation IS NOT available */
+//   console.log("geolocation is not available ");
 // }
