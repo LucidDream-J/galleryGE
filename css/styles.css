@@ -351,11 +351,19 @@ body {
     width: 100%;
     bottom: -100%;
     background-color: var(--light);
-    transition: bottom 0.3s ease-in-out;
+    opacity:0;
+    visibility: none;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
 }
 
 .footer.active {
     bottom: -40px;
+    opacity:1;
+    visibility:true;
 }
 
 .footer .container {
@@ -456,7 +464,6 @@ body {
     flex-wrap: wrap;
     max-width: 700px;
     min-width: 300px;
-
 }
 
 /* {
