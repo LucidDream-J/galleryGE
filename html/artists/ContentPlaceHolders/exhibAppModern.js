@@ -15,7 +15,7 @@ setTimeout(() => {
 
 function getData() {
   header.innerHTML = `<img id="exhibition-image" class="card-img-top" src="../../images/artistsImages/japanesePrints/modern/NA33.jpg" alt="Art image">`;
-  title.innerText = `Contemporary Prints`;
+  title.innerText = `Modern Japanese Prints`;
   excerpt.innerHTML = `  Catalogue Essay Pending
 `;
   profile_img.innerHTML = `<img class="profile-img" src="../../images/David.jpg" "alt="artist"></p>`;
