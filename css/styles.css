@@ -839,10 +839,11 @@ h3 {
   background-color: white;
   color: black;
   cursor: progress;
-  -webkit-transform: none;
-  -moz-transform: none;
-  -ms-transform: none;
-  -o-transform: none;
+  transform: translate(none);
+  -webkit-transform: translate(none);
+  -moz-transform: translate(none);
+  -ms-transform: translate(none);
+  -o-transform: translate(none);
 }
 
 /* ///// not available message */
@@ -937,6 +938,41 @@ h3 {
 .content-Ge h1 {
   margin: 10px 0;
 }
+
+/* form Send  */
+#status {
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  padding: 10px;
+  margin: 10px auto;
+  border-radius: 8px;
+}
+#status.success {
+  background-color: rgb(211, 250, 153);
+  animation: status 4s ease forwards;
+}
+#status.error {
+  background-color: rgb(250, 129, 92);
+  color: white;
+  animation: status 4s ease forwards;
+}
+@keyframes status {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+/* form Send End */
 
 
 /* Responsive */
