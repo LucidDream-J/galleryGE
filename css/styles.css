@@ -124,6 +124,7 @@ body {
 }
 
 .banner {
+  /* position: relative; */
   /* position: absolute;
     top: 30%;
     left: 15%; */
@@ -132,6 +133,22 @@ body {
   /* flex-direction:column ; */
   align-items: center;
   justify-content: center;
+}
+
+.banner .intro{
+  border-radius: 10px;
+  font-family: "Muli", sans-serif;
+  max-width:320px;
+  min-width: 320px;
+  font-size: 1rem;
+  padding: 20px;
+  margin: auto auto;
+  color:black;
+  background-color: #fff;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 
 .banner h1 {
