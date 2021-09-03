@@ -135,16 +135,16 @@ body {
   justify-content: center;
 }
 
-.banner .intro{
+.intro {
   border-radius: 10px;
   font-family: "Muli", sans-serif;
-  max-width:320px;
+  max-width: 70%;
   min-width: 320px;
   font-size: 1rem;
   padding: 20px;
   margin: auto auto;
-  color:black;
-  background-color: #fff;
+  color: black;
+  background-color: #E0D9D9;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
@@ -965,24 +965,29 @@ h3 {
   margin: 10px auto;
   border-radius: 8px;
 }
+
 #status.success {
   background-color: rgb(211, 250, 153);
   animation: status 4s ease forwards;
 }
+
 #status.error {
   background-color: rgb(250, 129, 92);
   color: white;
   animation: status 4s ease forwards;
 }
+
 @keyframes status {
   0% {
     opacity: 1;
     pointer-events: all;
   }
+
   90% {
     opacity: 1;
     pointer-events: all;
   }
+
   100% {
     opacity: 0;
     pointer-events: none;
@@ -990,7 +995,6 @@ h3 {
 }
 
 /* form Send End */
-
 
 /* Responsive */
 @media (max-width: 1400px) {
@@ -1169,8 +1173,80 @@ h3 {
     right: 2rem;
   }
 }
+
 /* End of Responsive */
 
+/* //////// BlURB TEXT */
+.blurb {
+  width: 100%;
+  margin: 30px auto;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  padding: 6rem;
+  padding-left: 9rem;
+  font-size: 1.6rem;
+  transform: skewX(0deg);
+  /* z-index: 10; */
+  -webkit-transform: skewX(0deg);
+  -moz-transform: skewX(0deg);
+  -ms-transform: skewX(0deg);
+  -o-transform: skewX(0deg);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+/* .blurb > * {
+  transform: skewX(12deg);
+}
+
+.blurb__text {
+  transform: skewX(12deg);
+}  */
+@media only screen and (max-width: 37.5em) {
+  .blurb__text {
+    transform: skewX(0);
+  }
+} 
+.u-margin-bottom-small {
+  margin-bottom: 2.5rem !important; }
+
+  .heading-tertiary {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-weight: 700; } 
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.15;
+  overflow: hidden;
+}
+.bg-video__content {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.section-blurb {
+  position: relative;
+  /* padding: 15rem 0; */
+  background-color: rgba(247, 247, 247, 0.3);
+}
+
+@media only screen and (max-width: 56.25em) {
+  .section-blurb {
+    padding: 10rem 0;
+  }
+}
+
+/* //////// BlURB TEXT  END/////////*/
 
 /* hearts  */
 
