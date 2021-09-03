@@ -1236,6 +1236,8 @@ h3 {
 
 .section-blurb {
   position: relative;
+  width:100%;
+  min-width: 320px;
   /* padding: 15rem 0; */
   background-color: rgba(247, 247, 247, 0.3);
 }
