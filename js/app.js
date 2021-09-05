@@ -54,7 +54,7 @@ window.addEventListener("DOMContentLoaded", function () {
   function success() {
     form.reset();
     status.classList.add("success");
-    status.innerText = "Thanks!";
+    status.innerText = "Thank you for your submission!";
   }
 
   function error() {
