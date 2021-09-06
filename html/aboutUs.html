@@ -71,7 +71,8 @@
     </button>
     <div class="header">
         <p class="text">Gallery East</p>
-        <a href="../index.html"><img src="../images/Symbol.gif" alt="Logo" class="logomedium" title="Back to home page" /></a>
+        <a href="../index.html"><img src="../images/Symbol.gif" alt="Logo" class="logomedium"
+                title="Back to home page" /></a>
     </div>
     <div class="hero">
         <div class="banner">
@@ -243,23 +244,27 @@
 
         <section id="contact" class="contact">
             <h2>Contact Us:</h2>
-            <form action="#">
+            <form action="https://formspree.io/f/mwkaarnk" method="POST" id="my-form">
+
+
                 <div class="form-container">
+                    <input type="hidden" name="_next" value="https://luciddream-j.github.io/galleryGE/thankYou.html">
+                    <input type="hidden" name="_subject" value="new email">
                     <div class="field">
                         <label>Name:</label>
-                        <input type="text" placeholder="Name" />
+                        <input type="text" name="name" placeholder="Name" required />
                     </div>
                     <div class="field">
                         <label>Phone Number:</label>
-                        <input type="tel" placeholder="Phone Number" />
+                        <input type="tel" name="number" placeholder="Phone Number" />
                     </div>
                     <div class="field w-100">
                         <label>Email:</label>
-                        <input type="mail" placeholder="Email" />
+                        <input type="email" name="email" placeholder="Email" required />
                     </div>
                     <div class="field w-100">
                         <label>Message:</label>
-                        <textarea cols="30" rows="3"></textarea>
+                        <textarea cols="30" rows="3" name="message" placeholder="Your Message"></textarea>
                     </div>
                 </div>
                 <!--.form-container-->
@@ -267,6 +272,7 @@
                     <input type="submit" class="button" value="Send" />
                 </div>
             </form>
+            <div id="status"></div>
         </section>
     </div>
     <div class="hero"></div>
