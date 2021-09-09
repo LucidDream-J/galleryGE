@@ -10,13 +10,34 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" />
     <link href="../css/styles.css" rel="stylesheet" />
-    <link rel="apple-touch-icon" sizes="120x120" href="../icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../icons/favicon-16x16.png">
-    <link rel="manifest" href="./icons/site.webmanifest">
-    <link rel="mask-icon" href="../icons/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
+    <link href="./artists/ContentPlaceHolders/css/exhibStyles.css" rel="stylesheet" />
+    <link href="./artists/ContentPlaceHolders/css/popup.css" rel="stylesheet" />
+    <link href="./artists/ContentPlaceHolders/css/slideShow.css" rel="stylesheet" />
+    <link rel="apple-touch-icon" sizes="120x120" href="../icons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../icons/favicon-16x16.png" />
+    <link rel="manifest" href="./icons/site.webmanifest" />
+    <link rel="mask-icon" href="../icons/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+    <style>
+        #mapid {
+            height: 600px;
+            width: 80%;
+            max-width: 1100px;
+            margin-bottom: 50px;
+            z-index: -1;
+        }
+    </style>
+
     <title>Gallery East</title>
 </head>
 
@@ -24,64 +45,344 @@
     <button class="nav-btn open-btn" title="menu">
         <i class="fas fa-bars"></i>
     </button>
+
     <div class="header">
         <p class="text">Gallery East</p>
-        <a href="../index.html"><img src="../images/Symbol.gif" alt="Logo" class="logomedium" title="Back to home page"/></a>
+        <a href="../index.html"><img src="../images/Symbol.gif" alt="Logo" class="logomedium"
+                title="Back to home page" /></a>
     </div>
-    <div class="hero">
+    <div id="returnTop" class="hero exhibTop">
         <div class="banner">
             <h1>Next Exhibition</h1>
             <img src="../images/SHIBARAKUSm.jpg" alt="SHIBARAKU" />
         </div>
     </div>
 
-    <div class="container">
-        <main class="services content">
-            <h2>Next Exhibition</h2>
-            <div class="services-container">
-                <div class="service">
-                    <h3>Under Construction</h3>
-                    <div class="icons">
-                        <i class="fas fa-pencil-ruler"></i>
-                        <i class="fas fa-tools"></i>
-                    </div>
-
+    <!-- <div class="header">
+        <p class="text">Gallery East</p>
+        <img src="./images/Symbol.gif" alt="Logo" class="logomedium">
+    </div> -->
+    <h1 class="subHead">
+        ASIAN TAKEAWAYS
+    </h1>
+    <h2>6pm on Wednesday the 22 September 2021</h2>
+    <p></p>
+    <div class="cardExhib">
+        <div id="header" class="card-header animated-bg">
+            &nbsp;
+        </div>
+        <div class="card-content">
+            <h2 id="title" class="heading-secondary u-margin-bottom-small"></h2>
+            <h3 class="heading-tertiary u-margin-bottom-small">
+                Nathan Beard, Sandra Black,  Jenny Dawson,  Susan Flavell and Andrew Nicholls
+            </h3>
+            <p class="popup__text" id="excerpt">excerpt</p>
+            <h4 class="card-title animated-bg animated-bg-text">
+                &nbsp;
+            </h4>
+            <p class="card-excerpt">
+                &nbsp;
+                <span class="animated-bg animated-bg-text">&nbsp;</span>
+                <span class="animated-bg animated-bg-text">&nbsp;</span>
+                <span class="animated-bg animated-bg-text">&nbsp;</span>
+            </p>
+            <h4 id="statement">&nbsp;</h4>
+            <p class="statement"></p>
+            <div class="author">
+                <div class="profile-img animated-bg" id="profile_img">
+                    &nbsp;
                 </div>
-                <!--.service-->
-
-                <!--.service-->
+                <div class="author-info">
+                    <strong class="animated-bg animated-bg-text" id="name">&nbsp;</strong>
+                    <small class="animated-bg animated-bg-text" id="date">&nbsp;</small>
+                </div>
             </div>
-        </main>
-
-        <section id="contact" class="contact">
-            <h2>Contact Us:</h2>
-            <form action="#">
-                <div class="form-container">
-                    <div class="field">
-                        <label>Name:</label>
-                        <input type="text" placeholder="Name" />
-                    </div>
-                    <div class="field">
-                        <label>Phone Number:</label>
-                        <input type="tel" placeholder="Phone Number" />
-                    </div>
-                    <div class="field w-100">
-                        <label>Email:</label>
-                        <input type="mail" placeholder="Email" />
-                    </div>
-                    <div class="field w-100">
-                        <label>Message:</label>
-                        <textarea cols="30" rows="3"></textarea>
-                    </div>
-                </div>
-                <!--.form-container-->
-                <div class="submit-form">
-                    <input type="submit" class="button" value="Send" />
-                </div>
-            </form>
-        </section>
+        </div>
     </div>
-    <div class="hero"></div>
+    <!-- <a href="#popup" class="btn">View now!</a> -->
+
+    <div class="popup" id="popup">
+        <div class="popup__content slideshow">
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+                <h3 class="heading-tertiary u-margin-bottom-small">
+                    Dr Christopher Crouch <br />
+                    New works — August 1 2021
+                </h3>
+                <!-- 50%-width images with number and caption text and zoomIn zoomOut-->
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 14</div>
+                    <img src="../images/artistsImages/crouch/1.jpg" style="width: 100%;" />
+                    <div class="text">
+                        Cat 1: Un-botanical 1 <br />
+                        <p>
+                            watercolour & gouache on Arches hot pressed paper <br />
+                            42 x 29cm <br />
+                            <br />
+                            $2860
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 14</div>
+                    <img src="../images/artistsImages/crouch/2.jpg" style="width: 100%;" />
+                    <div class="text">
+                        Cat 2: Un-botanical 2<br />
+                        <p>
+                            watercolour & gouache on Arches hot pressed paper <br />
+                            42 x 29cm <br />
+                            <br />
+                            $2860
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 14</div>
+                    <img src="../images/artistsImages/crouch/3.jpg" style="width: 100%;" />
+                    <div class="text">
+                        Cat 3: Un-botanical 3<br />
+                        <p>
+                            watercolour & gouache on Arches hot pressed paper <br />
+                            42 x 29cm <br />
+                            <br />
+                            $2860
+                        </p>
+                    </div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 14</div>
+                    <img src="../images/artistsImages/crouch/4.jpg" style="width: 100%;" />
+                    <div class="text">
+                        Cat 4: Un-botanical 4<br />
+                        <p>
+                            watercolour & gouache on Arches hot pressed paper <br />
+                            42 x 29cm <br />
+                            <br />
+                            $2860
+                        </p>
+                    </div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">5 / 14</div>
+                    <img src="../images/artistsImages/crouch/5.jpg" style="width: 100%;" />
+                    <div class="text">
+                        Cat 5: Un-botanical 5<br />
+                        <p>
+                            watercolour & gouache on Arches hot pressed paper <br />
+                            42 x 29cm <br />
+                            <br />
+                            $2860
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">6 / 14</div>
+                    <img src="../images/artistsImages/crouch/6.jpg" style="width: 100%;" />
+                    <div class="text">
+                        Cat 6: Un-botanical 6<br />
+                        <p>
+                            watercolour & gouache on Arches hot pressed paper <br />
+                            42 x 29cm <br />
+                            <br />
+                            $2860
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">7 / 14</div>
+                    <img src="../images/artistsImages/crouch/7C.jpg" style="width: 100%;" />
+                    <div class="text">
+                        Cat 7: Un-botanical 7<br />
+                        <p>
+                            watercolour & gouache on Arches hot pressed paper <br />
+                            29 x 42cm <br />
+                            <br />
+                            $2860
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">8 / 14</div>
+                    <img src="../images/artistsImages/crouch/8.jpg" style="width: 100%;" />
+                    <div class="text">
+                        Cat 8: Un-botanical 8<br />
+                        <p>
+                            watercolour & gouache on Arches hot pressed paper <br />
+                            42 x 29cm <br />
+                            <br />
+                            $2860
+                        </p>
+                    </div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">9 / 14</div>
+                    <img src="../images/artistsImages/crouch/9.jpg" style="width: 100%;" />
+                    <div class="text">
+                        Cat 9: Un-botanical 9<br />
+                        <p>
+                            watercolour & gouache on Arches hot pressed paper <br />
+                            42 x 29cm <br />
+                            <br />
+                            $2860
+                        </p>
+                    </div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">10 / 14</div>
+                    <img src="../images/artistsImages/crouch/DS1.jpg" style="width: 100%;" />
+                    <div class="text">
+                        Cat 10: Delmore Schwartz 1 <br />
+                        <p>
+                            <span>'Time is the school in which we learn'</span> <br /><br />
+                            <span>from Clamly We Walk through this April's Day</span>
+                        </p>
+
+                        <p>
+                            watercolour on paper <br />
+                            29 x 42cm <br />
+                            <br />
+                            $2860
+                        </p>
+                    </div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">11 / 14</div>
+                    <img src="../images/artistsImages/crouch/DS2.jpg" style="width: 100%;" />
+                    <div class="text">
+                        Cat 11: Delmore Schwartz 2<br />
+                        <p>
+                            <span>'The touched, seen substance of care:</span> <br />
+                            <span>Surround me, be round me, be with me like the air,</span>
+                            <br />
+                            <span>Abraham and Orheus, be with me now"</span> <br /><br />
+                            <span>from Abraham and Orheus be with me now</span> <br />
+                        </p>
+
+                        <p>
+                            watercolour on paper <br />
+                            29 x 42cm <br />
+                            <br />
+                            $2860
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">12 / 14</div>
+                    <img src="../images/artistsImages/crouch/DS3.png" style="width: 100%;" />
+                    <div class="text">
+                        Cat 12: Delmore Schwartz 3 <br />
+                        <p>
+                            <span>"Time is the fire in which we burn."</span> <br /><br />
+                            <span>from Clamly We Walk through this April's Day</span>
+                        </p>
+
+                        <p>
+                            watercolour on paper <br />
+                            29 x 42cm <br />
+                            <br />
+                            $2860
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">13 / 14</div>
+                    <img src="../images/artistsImages/crouch/DS4.jpg" style="width: 100%;" />
+                    <div class="text">
+                        Cat 13: Delmore Schwartz 4 <br />
+                        <p>
+                            <span>""The mind possess and is possessed by all the ruins of every
+                                haunted generation's celebrations."</span>
+                            <br /><br />
+                            <span>from The mind is an ancient and famous capitalDay</span>
+                        </p>
+
+                        <p>
+                            watercolour on paper <br />
+                            42 x 29cm <br />
+                            <br />
+                            $2860
+                        </p>
+                    </div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">14 / 14</div>
+                    <img src="../images/artistsImages/crouch/DS5.jpg" style="width: 100%;" />
+                    <div class="text">
+                        Cat 14: Delmore Schwartz 5 <br />
+                        <p>
+                            <span>"The butterfly caged in electric light is my only day in the
+                                world's dark night."</span>
+                            <br /><br />
+                            <span>from Socrates' ghost must haunt me now</span>
+                        </p>
+
+                        <p>
+                            watercolour on paper <br />
+                            42 x 29cm <br />
+                            <br />
+                            $2860
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)"> &#10094;</a>
+                <a class="next" onclick="plusSlides(1)"> &#10095;</a>
+            </div>
+            <br />
+
+            <!-- The dots/circles -->
+            <div style="text-align: center;">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+                <span class="dot" onclick="currentSlide(7)"></span>
+                <span class="dot" onclick="currentSlide(8)"></span>
+                <span class="dot" onclick="currentSlide(9)"></span>
+                <span class="dot" onclick="currentSlide(10)"></span>
+                <span class="dot" onclick="currentSlide(11)"></span>
+                <span class="dot" onclick="currentSlide(12)"></span>
+                <span class="dot" onclick="currentSlide(13)"></span>
+                <span class="dot" onclick="currentSlide(14)"></span>
+            </div>
+
+            <!-- //////////SlideShow end ///////// -->
+
+            <div class="popup__left">
+                <!-- <img src="../images/Symbol.gif" alt="art photo" class="popup__img" /> -->
+                <!-- <div class="space"></div> -->
+            </div>
+            <div class="popup__right">
+                <a href="#returnTop" class="popup__close">&times;</a>
+            </div>
+        </div>
+        <img src="../images/Symbol.gif" alt="art photo" class="popupS__img" />
+    </div>
+
+    <div>
+        <h1 class="subHead">
+            Earlywork &mdash; 6pm on Wednesday the 22 September 2021
+            <h2>until Sunday the 3 October &mdash; opening times Sunday  – Saturday, 11am – 5 pm</h2>
+            <h3>9/330 South Terrace, South Fremantle, Western Australia</h3>
+        </h1>
+        <a href="https://maps.google.com/maps?ll=-31.947423,115.834177&z=16&t=m&hl=en-US&gl=SG&mapclient=embed&q=115%20Hay%20St%20Subiaco%20WA%206008%20Australia"
+            target="blank">
+            <p><span>view directions on google-maps</span></p>
+        </a>
+    </div>
+
+    <div id="mapid"></div>
+    <a href="#" class="btn">View Online</a>
 
     <footer id="footer" class="footer glass">
         <div class="container">
@@ -142,11 +443,21 @@
                 <ul class="list">
                     <li><a class="active" href="../index.html">Home</a></li>
                     <li><a class="active" href="./artists.html">Artists</a></li>
-                    <li><a class="active" href="./artistsBooks.html">Artist books</a></li>
-                    <li><a class="active" href="./asianTakeAways.html">Asian Takeways</a></li>
-                    <li><a class="active" href="./japanPrints.html">Japanese prints</a></li>
-                    <li><a class="active" href="./currentExhibition.html">Current Exhibition</a></li>
-                    <li><a href="./nextExhibition.html">Next Exhibition</a></li>
+                    <li>
+                        <a class="active" href="./artistsBooks.html">Artist books</a>
+                    </li>
+                    <li>
+                        <a class="active" href="./asianTakeAways.html">Asian Takeways</a>
+                    </li>
+                    <li>
+                        <a class="active" href="./japanPrints.html">Japanese prints</a>
+                    </li>
+                    <li>
+                        <a class="active" href="./currentExhibition.html">Current Exhibition</a>
+                    </li>
+                    <li>
+                        <a href="./nextExhibition.html">Next Exhibition</a>
+                    </li>
                     <li>
                         <ul>
                             <li><a class="active" href="./directors.html">Directors</a></li>
@@ -160,7 +471,66 @@
             </div>
         </div>
     </div>
+    <script>
+        var mymap = L.map("mapid").setView([-32.069255, 115.75297], 17);
+        const attribution =
+            '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';
 
+        const tileUrl = "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png";
+        const tiles = L.tileLayer(tileUrl, {
+            attribution
+        });
+        tiles.addTo(mymap);
+
+        // Making a marker with a custom icon
+        // const issIcon = L.icon({
+        //     iconUrl: '../images/logo.png',
+        //     iconSize: [50, 32],
+        //     iconAnchor: [25, 16]
+        // });
+
+        var marker = L.marker([-32.069255, 115.75297]).addTo(mymap);
+
+        var circle = L.circle([-32.069255, 115.75297], {
+            color: "red",
+            fillColor: "#f03",
+            fillOpacity: 0.5,
+            radius: 20,
+        }).addTo(mymap);
+
+        // var polygon = L.polygon([
+        //     [51.509, -0.08],
+        //     [51.503, -0.06],
+        //     [51.51, -0.047]
+        // ]).addTo(mymap);
+
+        marker.bindPopup("<b>Earlywork</b><br>9/330 South Terrace").openPopup();
+        // circle.bindPopup("I am a circle.");
+        // polygon.bindPopup("I am a polygon.");
+        // var popup = L.popup()
+        //     .setLatLng([51.5, -0.09])
+        //     .setContent("I am a standalone popup.")
+        //     .openOn(mymap);
+
+        function onMapClick(e) {
+            alert("You clicked the map at " + e.latlng);
+        }
+
+        mymap.on("click", onMapClick);
+
+        var popup = L.popup();
+
+        function onMapClick(e) {
+            popup
+                .setLatLng(e.latlng)
+                .setContent("You clicked the map at " + e.latlng.toString())
+                .openOn(mymap);
+        }
+
+        mymap.on("click", onMapClick);
+    </script>
+    <script src="./artists/ContentPlaceHolders/exhibAppNext.js"></script>
+    <script src="./artists/ContentPlaceHolders/slideShow.js"></script>
     <script src="../js/app.js"></script>
 </body>
 
