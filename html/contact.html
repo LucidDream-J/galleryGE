@@ -10,13 +10,13 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" />
     <link href="../css/styles.css" rel="stylesheet" />
-    <link rel="apple-touch-icon" sizes="120x120" href="../icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../icons/favicon-16x16.png">
-    <link rel="manifest" href="./icons/site.webmanifest">
-    <link rel="mask-icon" href="../icons/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
+    <link rel="apple-touch-icon" sizes="120x120" href="../icons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../icons/favicon-16x16.png" />
+    <link rel="manifest" href="./icons/site.webmanifest" />
+    <link rel="mask-icon" href="../icons/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
     <title>Gallery East</title>
 </head>
 
@@ -83,7 +83,6 @@
                         <li><a href="https://rumble.com">rumble</a></li>
                         <li><a href="https://linkedIn.com">linkedIn</a></li>
                     </ul>
-
                 </div>
                 <!--.service-->
             </div>
@@ -92,22 +91,22 @@
         <section id="contact" class="contact">
             <h2>Contact Us:</h2>
             <form action="https://formspree.io/f/mwkaarnk" method="POST" id="my-form">
-
-
                 <div class="form-container">
-                    <input type="hidden" name="_next" value="https://luciddream-j.github.io/galleryGE/thankYou.html">
-                    <input type="hidden" name="_subject" value="new email">
+                    <input type="hidden" name="_next" value="https://luciddream-j.github.io/galleryGE/thankYou.html" />
+                    <input type="hidden" name="_subject" value="new email" />
                     <div class="field">
-                        <label>Name:</label>
-                        <input type="text" name="name" placeholder="Name" required />
+                        <label> Full Name:</label>
+                        <input type="text" name="name" placeholder="Full Name" required minlength="3" maxlength="100" />
                     </div>
                     <div class="field">
-                        <label>Phone Number:</label>
-                        <input type="tel" name="number" placeholder="Phone Number" />
+                        <label>Mobile Number:</label>
+                        <input type="tel" name="number" placeholder="0000-000-000" required
+                            title="Please include valid mobile number." pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}"> />
                     </div>
                     <div class="field w-100">
                         <label>Email:</label>
-                        <input type="email" name="email" placeholder="Email" required />
+                        <input type="email" name="email" placeholder="user-name@abcdefg.com" required
+                            title="Please include valid email address." />
                     </div>
                     <div class="field w-100">
                         <label>Message:</label>
@@ -183,11 +182,21 @@
                 <ul class="list">
                     <li><a class="active" href="../index.html">Home</a></li>
                     <li><a class="active" href="./artists.html">Artists</a></li>
-                    <li><a class="active" href="./artistsBooks.html">Artist books</a></li>
-                    <li><a class="active" href="./asianTakeAways.html">Asian Takeways</a></li>
-                    <li><a class="active" href="./japanPrints.html">Japanese prints</a></li>
-                    <li><a class="active" href="./currentExhibition.html">Current Exhibition</a></li>
-                    <li><a class="active" href="./nextExhibition.html">Next Exhibition</a></li>
+                    <li>
+                        <a class="active" href="./artistsBooks.html">Artist books</a>
+                    </li>
+                    <li>
+                        <a class="active" href="./asianTakeAways.html">Asian Takeways</a>
+                    </li>
+                    <li>
+                        <a class="active" href="./japanPrints.html">Japanese prints</a>
+                    </li>
+                    <li>
+                        <a class="active" href="./currentExhibition.html">Current Exhibition</a>
+                    </li>
+                    <li>
+                        <a class="active" href="./nextExhibition.html">Next Exhibition</a>
+                    </li>
                     <li>
                         <ul>
                             <li><a class="active" href="./directors.html">Directors</a></li>
