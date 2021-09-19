@@ -28,7 +28,7 @@
 } */
 
 .hero {
-  background-image: url(../images/dannie-jing-3GZlhROZIQg-unsplash.jpg);
+  background-image: url(../images/oleg-laptev-7jQh3EiS8Bs-unsplash.jpg);
   background-position: center center;
   background-size: cover;
   min-height: 100vh;
@@ -798,11 +798,9 @@ h3 {
 
 .glass {
   background: white;
-  background: linear-gradient(
-    to right bottom,
-    rgba(255, 255, 255, 0.7),
-    rgba(255, 255, 255, 0.3)
-  );
+  background: linear-gradient(to right bottom,
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.3));
   backdrop-filter: blur(2rem);
 }
 
@@ -1209,14 +1207,17 @@ h3 {
   .blurb__text {
     transform: skewX(0);
   }
-} 
-.u-margin-bottom-small {
-  margin-bottom: 2.5rem !important; }
+}
 
-  .heading-tertiary {
-    font-size: 1.6rem;
-    text-transform: uppercase;
-    font-weight: 700; } 
+.u-margin-bottom-small {
+  margin-bottom: 2.5rem !important;
+}
+
+.heading-tertiary {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
 
 .bg-video {
   position: absolute;
@@ -1228,6 +1229,7 @@ h3 {
   opacity: 0.15;
   overflow: hidden;
 }
+
 .bg-video__content {
   height: 100%;
   width: 100%;
@@ -1236,7 +1238,7 @@ h3 {
 
 .section-blurb {
   position: relative;
-  width:100%;
+  width: 100%;
   min-width: 320px;
   /* padding: 15rem 0; */
   background-color: rgba(247, 247, 247, 0.3);
@@ -1302,4 +1304,3 @@ h3 {
 }  */
 
 /* artists_2  */
-
