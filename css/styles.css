@@ -100,7 +100,7 @@
 
 body {
   background-color: rgba(255, 255, 255);
-  background-image: url("../images/svg/blob.svg");
+  background-image: url("../images/svg/wave.svg");
   background-position: center center;
   background-size: cover;
   font-family: "Muli", sans-serif;
@@ -143,8 +143,8 @@ body {
   font-size: 1rem;
   padding: 20px;
   margin: auto auto;
-  color: black;
-  background-color: #E0D9D9;
+  color: rgb(250, 250, 250);
+  background-color: rgba(39, 38, 38, 0.3);
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
@@ -276,7 +276,7 @@ body {
 }
 
 .nav-red {
-  background-color: #ff0040;
+  background-color: #ff5c5c;
   width: 95%;
   transition-delay: 0.2s;
 }
@@ -840,7 +840,7 @@ h3 {
 .destination:hover,
 .destination:active {
   transform: translateY(-3px);
-  background-color: #ff0040;
+  background-color: #ff5c5c;
   color: white;
 }
 
@@ -1179,7 +1179,7 @@ h3 {
   width: 100%;
   margin: 30px auto;
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.2);
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(87, 85, 85, 0.4);
   border-radius: 10px;
   padding: 6rem;
   padding-left: 9rem;
@@ -1199,10 +1199,11 @@ h3 {
 /* .blurb > * {
   transform: skewX(12deg);
 }
-
-.blurb__text {
-  transform: skewX(12deg);
-}  */
+*/
+.blurb__text-h3 {
+  /* transform: skewX(12deg); */
+  color: white;
+}  
 @media only screen and (max-width: 37.5em) {
   .blurb__text {
     transform: skewX(0);
@@ -1241,7 +1242,7 @@ h3 {
   width: 100%;
   min-width: 320px;
   /* padding: 15rem 0; */
-  background-color: rgba(247, 247, 247, 0.3);
+  background-color: rgba(8, 8, 8, 1.0);
 }
 
 @media only screen and (max-width: 56.25em) {
