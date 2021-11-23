@@ -19,24 +19,17 @@
   z-index: -1;
 }
 
-/* .shibaraku{
-    border-radius: 50% 50%;
-    -webkit-border-radius: 50% 50%;
-    -moz-border-radius: 50% 50%;
-    -ms-border-radius: 50% 50%;
-    -o-border-radius: 50% 50%;
-} */
 
 .hero {
-  background-image: url(../images/oleg-laptev-7jQh3EiS8Bs-unsplash.jpg);
+  background-image: url(../images/artistsImages/japanesePrints/floraFauna/PER9.jpg);
   background-position: center center;
   background-size: cover;
   min-height: 100vh;
   width: 100vw;
-  background-attachment: fixed;
-  display: flex;
+  /* background-attachment: fixed; */
+    display: flex;
   justify-content: end;
-  align-items: center;
+  align-items: center; 
   color: var(--light);
   position: relative;
   /* font-size: 2.5rem; */
@@ -113,6 +106,7 @@ body {
 
 .subHead {
   font-size: 2.5rem;
+  color: white;
 }
 
 .header {
@@ -123,6 +117,9 @@ body {
   justify-content: flex-end;
 }
 
+
+
+
 .banner {
   /* position: relative; */
   /* position: absolute;
@@ -131,9 +128,11 @@ body {
   width: 100%;
   display: flex;
   /* flex-direction:column ; */
-  align-items: center;
+  align-items: calc();
   justify-content: center;
 }
+
+
 
 .intro {
   border-radius: 10px;
@@ -153,9 +152,9 @@ body {
 
 .banner h1 {
   font-family: inherit;
-  font-size: 4rem;
+  font-size: 8rem;
   font-weight: 300;
-  color: rgb(247, 244, 244);
+  color: rgb(248, 85, 10);
   width: 40%;
   line-height: 4rem;
   letter-spacing: 0.2rem;
@@ -255,8 +254,12 @@ body {
   top: 0;
   left: 0;
   height: 100vh;
-  transform: translateX(-100%);
+  transform: translateX(400%);
   transition: transform 0.3s ease-in-out;
+  -webkit-transform: translateX(400%);
+  -moz-transform: translateX(400%);
+  -ms-transform: translateX(400%);
+  -o-transform: translateX(400%);
 }
 
 .nav.visible {
@@ -355,6 +358,21 @@ body {
   color: var(--dark);
   text-decoration: none;
 }
+
+.SHIBARAKU{
+  position: fixed;
+  width: 70px;
+  height: 70px;
+  bottom: 5rem;
+  right: 5rem;
+  border-radius: 50px 50px;
+  -webkit-border-radius: 50px 50px;
+  -moz-border-radius: 50px 50px;
+  -ms-border-radius: 50px 50px;
+  -o-border-radius: 50px 50px;
+
+}
+
 
 .footerBtn:hover {
   color: #da595e;
