@@ -108,7 +108,7 @@
 /* EXHIB Btn */
 .btn {
     border: 2px solid #ff0040;
-    background: none;
+    background: white;
     padding: 20px 40px;
     font-size: 25px;
     text-transform: uppercase;
@@ -126,6 +126,7 @@
 
 .btn:hover {
     color: white;
+    background: #ff0040;
 }
 
 .btn:before {
