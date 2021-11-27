@@ -35,6 +35,14 @@
   /* font-size: 2.5rem; */
 }
 
+.hero.bottom-index{
+  background-image: url(../images/artistsImages/japanesePrints/floraFauna/PER46.jpg);
+}
+.hero.bottom-artists{
+  background-image: url(../images/artists-2.jpg);
+  min-height: 95vh;
+}
+
 .hero.japanprint {
   background-image: url(../images/artistsImages/japanesePrints/Yoshizasu1586.jpg);
 }
