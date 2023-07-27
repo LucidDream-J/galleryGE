@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" />
+    <link href="../css/styles.css" rel="stylesheet" />
+    <link href="./artists/ContentPlaceHolders/css/exhibStyles.css" rel="stylesheet" />
+    <link href="./artists/ContentPlaceHolders/css/popup.css" rel="stylesheet" />
+    <link href="./artists/ContentPlaceHolders/css/slideShow.css" rel="stylesheet" />
+    <link rel="apple-touch-icon" sizes="120x120" href="../icons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../icons/favicon-16x16.png" />
+    <link rel="manifest" href="./icons/site.webmanifest" />
+    <link rel="mask-icon" href="../icons/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+    <style>
+        #mapid {
+            height: 600px;
+            width: 80%;
+            max-width: 1100px;
+            margin-bottom: 50px;
+            z-index: -1;
+        }
+    </style>
+
+    <title>Gallery East</title>
+</head>
+
+<body>
+    <button class="nav-btn open-btn" title="menu">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <div class="header">
+        <p class="text">Gallery East</p>
+        <a href="../index.html"><img src="../images/Symbol.gif" alt="Logo" class="logomedium"
+                title="Back to home page" /></a>
+    </div>
+    <div id="returnTop" class="hero">
+        <div class="banner">
+            <h1>Ancient and Modern - 1</h1>
+        </div>
+    </div>
+
+    <!-- <div class="header">
+        <p class="text">Gallery East</p>
+        <img src="./images/Symbol.gif" alt="Logo" class="logomedium">
+    </div> -->
+    <h1 class="subHead">
+        The Genuis of Japanese Prints Ancient and Modern
+    </h1>
+    <h2>11 August – 1  September  2023</h2>
+    <p></p>
+    <div class="cardExhib">
+        <div id="header" class="card-header animated-bg">
+            &nbsp;
+        </div>
+        <div class="card-content">
+            <h3 class="heading-tertiary u-margin-bottom-small">
+                The Genuis of Japanese Prints Ancient and Modern
+            </h3>
+            <h2 id="title" class="heading-secondary u-margin-bottom-small"></h2>
+           
+            <p class="popup__text" id="excerpt">excerpt</p>
+            <h4 class="card-title animated-bg animated-bg-text">
+                &nbsp;
+            </h4>
+            <p class="card-excerpt">
+                &nbsp;
+                <span class="animated-bg animated-bg-text">&nbsp;</span>
+                <span class="animated-bg animated-bg-text">&nbsp;</span>
+                <span class="animated-bg animated-bg-text">&nbsp;</span>
+            </p>
+            <h4 id="statement">&nbsp;</h4>
+            <p class="statement"></p>
+            <div class="author">
+                <div class="profile-img animated-bg" id="profile_img">
+                    &nbsp;
+                </div>
+                <div class="author-info">
+                    <strong class="animated-bg animated-bg-text" id="name">&nbsp;</strong>
+                    <small class="animated-bg animated-bg-text" id="date">&nbsp;</small>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <a href="#popup" class="btn">View now!</a> -->
+
+    <div class="popup" id="popup">
+        <div class="popup__content slideshow">
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+                <h3 class="heading-tertiary u-margin-bottom-small">
+                    The Genuis of Japanese Prints Ancient and Modern <br />
+                    11 August &mdash; 1  September  2023
+                </h3>
+                <!-- 50%-width images with number and caption text and zoomIn zoomOut-->
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 21</div>
+                    <img src="../images/2023JpImages/Cat 1.jpg" style="width: 100%;" />
+                    <div class="text">
+                        Cat 1: Katsukawa SHUNCHO   (1726 – 93) <br />
+                        <p>A painter and printmaker in the ukiyo-e style, and the leading artist of the Katsukawa school. 
+                            Shunshō is most well-known for introducing a new form of prints depicting Kabuki actors. However, his images of beautiful 
+                             women while less famous, are said by some to be the best before Utamaro in the last decades of the 18th century.</p>
+                        <p>From the set <strong>“Thirty-six examples of love making positions”</strong></p>
+                        <p>
+                            published  c.1780   <br />
+                            10.6 x 15.5 cm <br />
+                            <br />
+                            $ 880 
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 21</div>
+                    <img src="../images/2023JpImages/Cat 2.jpg" style="width: 100%;" />
+                    <div class="text">
+                        Cat 2:  Utagawa TOYOHIRO (1773 – 1827) <br />
+                        <p>A print designer and painter, his works include a number of landscapes, as well as many depictions of the daily activities 
+                             in the entertainment quarter. He produced an important series of ukiyo-e triptychs, and book illustrations. </p>
+                        <p> <strong>Beautiful Women by the Seashore</strong></p>
+                        <p>
+                            Published by Yamadaya Sanshiro  c.1801 <br />
+                            37.2 x 24.75 cm	<br />
+                            <br />
+                            $ 2500
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 21</div>
+                    <img src="../images/2023JpImages/Cat 3.jpg" style="width: 100%;" />
+                    <div class="text">
+                        Cat 3: Kitagawa  TSUKIIMARO (act 1789 – 1829)<br />
+                        <p>One of the most successful students of Utamaro who, like his master, specialized in portraits of beautiful women.</p>
+                        <p><strong>High Class Courtesan (Oiran) with Flower and Hair Ornaments</strong></p>
+                        <p>
+                            Published c. 1790<br />
+                            34.7 x 24 cm<br />
+                            <br />
+                            $ 3300
+                        </p>
+                    </div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 21</div>
+                    <img src="../images/2023JpImages/Cat 4.jpg" style="width: 100%;" />
+                    <div class="text">
+                        Cat 4: Kikugawa EIZAN 1787 – 1867<br />
+                        <p>The most prolific and the best of the followers of Utamaro. His work, focusing on images off beautiful women, is noted for 
+                             its sensitivity and lyricism. In c. 1830 he abandoned print making for painting</p>
+                      
+                            <p><strong>Beauty under a full moon on a summer night</strong></p>
+                            <p>original woodblock print,  published c. 1820  Kakemono,<br />
+                            71 x 24.75  cm</p> 
+                            <p> 
+                            $ 3300
+                        </p>
+                    </div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">5 / 21</div>
+                    <img src="../images/2023JpImages/Cat 5.jpg" style="width: 100%;" />
+                    <div class="text">
+                        Cat 5: keda EISEN   (1790 – 1848)<br />
+                        <p>Ukiyo-e painter, printmaker, & illustrator; his best work, 
+                            of beautiful women and erotica, is both elegant and refined  </p>
+                       
+                            <p><strong>Twelve Views of Modern Beauties: Boats on the
+                                River at Tsukuda Shinchi, the Gentle Type, Mending</strong></p>
+                                <p>(Imayo Bijin Junikei: Tsukuda Shinchi no irifune, 
+                                Otanashisho)
+                               signed Keisai Eisen ga, with censor's seal Kiwame and 
+                               publisher's seal of Izumiya Ichibei, ca. 1822-23<br />
+                               39.3 by 26.5 cm<br />
+                            <br />
+                            $ 11000
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">6 / 21</div>
+                    <img src="../images/2023JpImages/Cat 6.jpg "style="width: 100%;" />
+                    <div class="text">
+                        Cat 6: keda EISEN   (1790 – 1848)<br />
+                        <p>Ukiyo-e painter, printmaker, & illustrator; his best work, 
+                            of beautiful women and erotica, is both elegant and refined  </p>
+                       
+                            <p><strong>Courtesan wearing a stunning kimono with a 
+                                tiger/dragon/bamboo motif at cherry blossom time</strong></p>
+                                <p>Published by Kichibei, ca. 1825<br />
+                                39.3 by 26.5 cm<br />
+                            <br />
+                            $ 2200     
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">7 / 21</div>
+                    <img src="../images/2023JpImages/Cat 7.jpg" style="width: 100%;" />
+                    <div class="text">
+                        Cat 7: Katsushika HOKUSAI (1760 – 1849)<br />
+                        <p>One of the great greatest draftsmen of world art, he is the most highly regarded Japanese artist in the West. His long life 
+                             was devoted to a constant and daring exploration of design and painting. He is responsible for many of the great 
+                              masterpieces of Ukiyo-e, including ‘The Great Wave’ and his illustrated 3 volume book, 100 Views of Fuji. </p>
+                        
+                            <p><strong>Fuji under a Sluice  (Kakehi no Fuji)</strong></p>
+                            <p> number 54 from 100 Views of Mount Fuji (Fugaku Hyakkeei) Volume 2</p>
+                            <p>Possibly a figment of Hokusai’s imagination since no sluice of this description is known to have existed. A characteristic bevy of Hokusai figures survey the water spewing from the sluice and  which seems to be pouring directly on one of the boats below.</p>
+                            <p>first published c 1840<br />
+                            71 x 24.75  cm</p>
+                            
+                            <p> framed  $880                                                                       
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">8 / 21</div>
+                    <img src="../images/2023JpImages/Cat 8.jpg" style="width: 100%;" />
+                    <div class="text">
+                        Cat 8: Katsushika HOKUSAI (1760 – 1849)<br />
+                        <p>One of the great greatest draftsmen of world art, he is the most highly regarded Japanese artist in the West. His long life 
+                             was devoted to a constant and daring exploration of design and painting. He is responsible for many of the great 
+                              masterpieces of Ukiyo-e, including ‘The Great Wave’ and his illustrated 3 volume book, 100 Views of Fuji. </p>
+                       
+                            <p><strong>Travellers in Winter </strong></p>
+                            <p>  from Hokusai Gafu (Hokusai Album of Pictures) 3 Volumes </p>
+                            <p>original woodblock print,
+                            published by Eirakuya Toshiro early 1849 <br />
+                            12.4 x 18.5 cm </p>
+                            <p>framed  $660                                                                       
+                        </p>
+                    </div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">9 / 21</div>
+                    <img src="../images/2023JpImages/Cat 9.jpg" style="width: 100%;" />
+                    <div class="text">
+                        Cat 9: Utagawa KUNISADA (TOYOKUNI III) (1786 – 1864)<br />
+                        <p>The most popular, commercially successful  and prolific Ukiyo-e artist of the 19th Century, Kunisada was the principal 
+                             chronicler of Kabuki theatre performances and the actors who starred in them.  Although Kabuki actors formed about 70% of 
+                              his output. he designed many prints of beautiful women, erotica and illustrations for novels. A pupil of Utagawa 
+                               Toyokuni, Kunisada adopted his master’s name in 1844 on the death of Toyokuni II (Toyoshige) whose assumption of that 
+                                name, Kunisada never recognized.</p>
+                       
+                            <p><strong>Young Samurai with falcon</strong></p>
+                            <p> Published c. 1830<br />
+                            71.75 x 24.75 cm</p>
+                        
+                            <p>  $2750
+                        </p>
+                    </div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">10 / 21</div>
+                    <img src="../images/2023JpImages/Cat 10.jpg" style="width: 100%;" />
+                    <div class="text">
+                        Cat 10: Utagawa KUNISADA (TOYOKUNI III) (1786 – 1864)<br />
+                        <p>The most popular, commercially successful  and prolific Ukiyo-e artist of the 19th Century, Kunisada was the principal 
+                             chronicler of Kabuki theatre performances and the actors who starred in them.  Although Kabuki actors formed about 70% of 
+                              his output. he designed many prints of beautiful women, erotica and illustrations for novels. A pupil of Utagawa 
+                               Toyokuni, Kunisada adopted his master’s name in 1844 on the death of Toyokuni II (Toyoshige) whose assumption of that 
+                                name, Kunisada never recognized.</p>
+                      
+                            <p> From the Kabuki play,  <strong>Jiraiya goketsu</strong>
+                                The actor Ichikawa Danjuro VIII in the role of Jiraiya drawing his sword and threatening the man to the left. He wears 
+                                 a powerful stage garment fashioned as a giant eagle.</p>
+                                <p> Published by  Yamamotoya Heikichi 7th Month 1853<br />
+                                 37 x 52 cm </p>
+                            <p>   $ 1100
+                        </p>
+                    </div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">11 / 21</div>
+                    <img src="../images/2023JpImages/Cat 11.jpg" style="width: 100%;" />
+                    <div class="text">
+                        Cat 11: Utagawa KUNISADA II 1823 - 1880<br />
+                        <p>Pupil and son-in-law of Kunisada, he continued his master’s role as a principal chronicler of Kabuki theatre performances 
+                             and the actors who starred in them.  Although he often lacked Kunisada’s brilliance, his most outstanding  designs were a 
+                              worthy match. </p>
+                        
+                            <p><strong> A beauty among autumn grasses</strong></p>
+                            
+                            <p>Published c. 1865<br />71.75 x 24.75 cm</p>
+                        
+                            <p> $2750
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">12 / 21</div>
+                    <img src="../images/2023JpImages/Cat 12.jpg" style="width: 100%;" />
+                    <div class="text">
+                        Cat 12: Utagawa KUNISADA II 1823 - 1880<br />
+                        <p>Pupil and son-in-law of Kunisada, he continued his master’s role as a principal chronicler of Kabuki theatre performances 
+                            and the actors who starred in them.  Although he often lacked Kunisada’s brilliance, his most outstanding  designs were a 
+                             worthy match. </p>
+                            <p><strong> Eastern Genji and the Autumn Moon at Fukagawa</strong></p>
+                            <p>From the Tales of Genji, the young prince arrives by boat for a moon viewing party</p>
+                            <p>   Published 1856 <br />
+                            35 x 73cm  </p>
+                            <p> $2200  
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">13 / 21</div>
+                    <img src="../images/2023JpImages/Cat 13A.jpg" style="width: 100%;" />
+                    <div class="text">
+                        Cat 13: Utagawa KUNISADA II 1823 - 1880<br />
+                        <p>Pupil and son-in-law of Kunisada, he continued his master’s role as a principal chronicler of Kabuki theatre performances 
+                            and the actors who starred in them.  Although he often lacked Kunisada’s brilliance, his most outstanding  designs were a 
+                             worthy match. </p>
+                            <p><strong>Prince Genji and Court Ladies viewing Cherry Blossom</strong></p>
+                            <p>Published c.1860  <br />35 x 73 cm </p>
+                            <p> $2200  </p>
+                           
+                      
+                    </div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">14 / 21</div>
+                    <img src="../images/2023JpImages/Cat 14.jpg" style="width: 100%;" />
+                    <div class="text">
+                        Cat 14: Ando HIROSHIGE 1797 – 1858<br />
+                        <p>More than any other artist, Hiroshige’s work is responsible for the Westerner’s view of the quintessential Japanese 
+                             landscape. His print designs have enormous charm, show great technical virtuosity and continue to enjoy enormous 
+                              popularity both within and outside Japan.</p>
+                        
+                            <p><strong> Noge and Yokohama in Muashi Province</strong><br />from the series, 36 Views of Fuji (Fuji sanjurokkei) </p>
+                            <p>original woodblock print,       published by Tsutaya Kichibai 1858<br />
+                            34 x 22.5 cm </p>
+                            <p>  
+                            $ 3300
+                        </p>
+                    </div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">15 / 21</div>
+                    <img src="../images/2023JpImages/Cat 15.jpg" style="width: 100%;" />
+                    <div class="text">
+                        Cat 15: Ando HIROSHIGE II 1826 - 1869<br />
+                        <p>The most prolific and the best of the followers of Utamaro. His work, focusing on images off beautiful women, is noted for 
+                             its sensitivity and lyricism. In c. 1830 he abandoned print making for painting</p>
+                        
+                            <p><strong>Daijô-ji Temple at Kanazawa in Kaga Province</strong><br /> (Kaga Kanazawa Daijô-ji), from the series One 
+                                 Hundred Famous Views in the Various Provinces (Shokoku meisho hyakkei)</p>
+                                 <p>original woodblock print,  published by Uoya Eikichi 11/1859<br />
+                                33.5 x 22.5 cm </p>
+                         
+                                <p>    $ 4400
+                        </p>
+                    </div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">16 / 21</div>
+                    <img src="../images/2023JpImages/Cat 16.jpg" style="width: 100%;" />
+                    <div class="text">
+                        Cat 16: Ando HIROSHIGE II 1826 - 1869<br />
+                        <p>The most prolific and the best of the followers of Utamaro. His work, focusing on images off beautiful women, is noted for 
+                             its sensitivity and lyricism. In c. 1830 he abandoned print making for painting</p>
+                        
+                            <p><strong>Kirufini Waterfall in Nikko Province </strong><br /> (Kaga Kanazawa Daijô-ji), number 38 from the series One 
+                                 Hundred Famous Views in the Various Provinces (Shokoku meisho hyakkei)</p>
+                                 <p>original woodblock print,  published by Uoya Eikichi 1859<br />
+                                33.5 x 22.5 cm </p>
+                         
+                                <p>    $ 3300
+                        </p>
+                    </div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">17 / 21</div>
+                    <img src="../images/2023JpImages/Cat 17.jpg" style="width: 100%;" />
+                    <div class="text">
+                        Cat 17: Ando HIROSHIGE II 1826 - 1869<br />
+                        
+                            <p><strong>Prince Genji riding an oxen being led by an abolene diver along the sea shore with Endoshima Island in the 
+                                 distance. </strong></p>
+                                 <p>original woodblock print,  published  1860<br />
+                                    36 x 49.3 cm </p>
+                         
+                                <p>   $ 2200
+                        </p>
+                    </div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">18 / 21</div>
+                    <img src="../images/2023JpImages/Cat 18.jpg" style="width: 100%;" />
+                    <div class="text">
+                        Cat 18: Utagawa KUNISADA II (1823 -1880) and Ando HIROSHIGE II 1826 – 1869<br />
+                        
+                            <p><strong>From the series ‘Scenes of Famous Places along the Tokaido Road”. Enoshima.</strong></p>
+                                 <p>Published by Isaya Kanakichi, 1863<br />
+                                    35 x 22 cm	 </p>
+                         
+                                <p>    $1100
+                        </p>
+                    </div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">19 / 21</div>
+                    <img src="../images/2023JpImages/Cat 19.jpg" style="width: 100%;" />
+                    <div class="text">
+                        Cat 19: Utagawa YOSHIKAZU (act. 1848 – 70<br />
+                        <p>followed in the footsteps of  Kuniyoshi in designing warrior scenes and landscapes but in his later career became best known 
+                             for his depictions of foreigners in Yokohama.</p>
+                        <p>
+                            <p><strong> Tiger in a bamboo grove</strong></p>
+                            <p>  Published by Marujin  c. 1852<br />
+                                72.5 x  24.5 cm <br /></p>
+                            <br />
+                            <p>    $ 4400 
+                        </p>
+                    </div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">20 / 21</div>
+                    <img src="../images/2023JpImages/Cat 20-min.jpg" style="width: 100%;" />
+                    <div class="text">
+                        Cat 20: Konishi HIROSADA fl. 1815 – 1865<br />
+                        <p>One of the most successful print makers from Osaka, he concentrated on actor portraits in the smaller ‘chuban’ format 
+                             favoured by Osaka artists, using the exceptional printing techniques of the Osaka publishers.</p>
+                        
+                            <p><strong>Kokin Huyatoki, Inagena River</strong></p>
+                            <p>  Published c. 1840<br />
+                            23 x 17cm</p>
+
+                            <p>  $495
+                        </p>
+                    </div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">21 / 21</div>
+                    <img src="../images/2023JpImages/Cat 21.jpg" style="width: 100%;" />
+                    <div class="text">
+                        Cat 21: Tsukioka YOSHITOSHI   1839-1892<br />
+                        <p>Widely recognized as the last great master of the ukiyo-e genre of wood block printing,  he is also regarded as one of the 
+                             form's greatest innovators. Renowned for his images of beauty and violence, he almost singlehandedly managed to push the 
+                              traditional Japanese woodblock print  to a new level, before it effectively died with him. His reputation has only 
+                               continued to grow, both in the West, and among younger Japanese, and he is now almost universally recognized as the 
+                                greatest Japanese artist of his era</p>
+                        <p>
+                            <p>From the series <strong>Tsuki hyakushi (One Hundred Aspects of the Moon)</strong>number 26, the Casia Tree Moon (Wu 
+                                 Gang). 
+                                Wu Gang punished eternally to chop off the branches of the 10,000 feet high cassia trees on the moon, which instantly 
+                                 regrow.</p>
+                                 <p>  colour woodblock print,       Published by Akiyama Buemon, 1885<br />
+                                 36.5 x 24 cm</p>
+                            <p>   $ 2750
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)"> &#10094;</a>
+                <a class="next" onclick="plusSlides(1)"> &#10095;</a>
+            </div>
+            <br />
+
+            <!-- The dots/circles -->
+            <div style="text-align: center;">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+                <span class="dot" onclick="currentSlide(7)"></span>
+                <span class="dot" onclick="currentSlide(8)"></span>
+                <span class="dot" onclick="currentSlide(9)"></span>
+                <span class="dot" onclick="currentSlide(10)"></span>
+                <span class="dot" onclick="currentSlide(11)"></span>
+                <span class="dot" onclick="currentSlide(12)"></span>
+                <span class="dot" onclick="currentSlide(13)"></span>
+                <span class="dot" onclick="currentSlide(14)"></span>
+                <span class="dot" onclick="currentSlide(15)"></span>
+                <span class="dot" onclick="currentSlide(16)"></span>
+                <span class="dot" onclick="currentSlide(17)"></span>
+                <span class="dot" onclick="currentSlide(18)"></span>
+                <span class="dot" onclick="currentSlide(19)"></span>
+                <span class="dot" onclick="currentSlide(20)"></span>
+                <span class="dot" onclick="currentSlide(21)"></span>
+           
+            </div>
+
+            <!-- //////////SlideShow end ///////// -->
+
+            <div class="popup__left">
+                <!-- <img src="../images/Symbol.gif" alt="art photo" class="popup__img" /> -->
+                <!-- <div class="space"></div> -->
+            </div>
+            <div class="popup__right">
+                <a href="/html/nextExhibMain.html" class="popup__close">&times;</a>
+            </div>
+        </div>
+        <img src="../images/Symbol.gif" alt="art photo" class="popupS__img" />
+    </div>
+
+    <div>
+        <h1 class="subHead">
+            Opening &mdash; 6pm on Friday the 11 August 2023
+            <h2 class="whiteText" >until Friday the 1 September &mdash; opening times Tuesday  &mdash; Friday, 11am &mdash; 5 pm, Saturday, 11am &mdash; 5 pm</h2>
+            <h3 class="whiteText">12a Aberdeen St, Perth WA 6000</h3>
+        </h1>
+        <a href="https://www.google.com/maps/place/Gallery+Central/@-31.9483041,115.8610046,17z/data=!4m15!1m8!3m7!1s0x2a32bbeb2db72fe9:0xf86dde7d7d86599a!2sGallery+Central!8m2!3d-31.9483041!4d115.8631933!10e5!16s%2Fg%2F1td6jry5!3m5!1s0x2a32bbeb2db72fe9:0xf86dde7d7d86599a!8m2!3d-31.9483041!4d115.8631933!16s%2Fg%2F1td6jry5?entry=ttu"
+            target="blank">
+            <p><span>view directions on google-maps</span></p>
+        </a>
+    </div>
+
+    <div id="mapid"></div>
+    <a href="#popup" class="btn">View Online</a>
+
+    <footer id="footer" class="footer glass">
+        <div class="container">
+            <div class="nav-footer">
+                <h3>Art Evaluations</h3>
+                <nav class="menu">
+                    <a href="#">History of Ownership </a>
+                    <a href="#">Provennonce</a>
+                    <a href="#">Policies</a>
+                    <a href="#">Help</a>
+                </nav>
+            </div>
+            <div class="nav-footer">
+                <h3>Art Buying</h3>
+                <nav class="menu">
+                    <a href="#">Trust & Safety</a>
+                    <a href="#">Buying Credit</a>
+                    <a href="#">Art Cards</a>
+                    <a href="#">Art Prints</a>
+                    <a href="#">Buying Events <span class="new">New</span> </a>
+                </nav>
+            </div>
+            <div class="nav-footer">
+                <h3>Art Consultation</h3>
+                <nav class="menu">
+                    <a href="#">What is it about?</a>
+                    <a href="#">Is it the right investment?</a>
+                    <a href="#">Responsible collecting?</a>
+                    <a href="#">Organise your exhibition</a>
+                </nav>
+            </div>
+            <div class="nav-footer">
+                <nav class="social-nav">
+                    <a href="https://www.artstation.com/"><span>artstation</span></a>
+                    <a href="https://www.etsy.com/"><span>etsy</span></a>
+                    <a href="http://www.linkedin.com/"><span>linkedIn</span></a>
+                </nav>
+                <nav class="menu">
+                    <a href="#">Terms</a>
+                    <a href="#">Privacy</a>
+                    <a href="#">Site map</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#footer" class="footerBtn">Services, Terms, Privacy & more</a>
+    <img class="SHIBARAKU" src="../images/SHIBARAKUSm.jpg" alt="SHIBARAKU" />
+    <div class="nav nav-black">
+        <div class="nav nav-red">
+            <div class="nav nav-white">
+                <button class="nav-btn close-btn">
+                    <i class="fas fa-times closeSize"></i>
+                </button>
+
+                <!-- <a href="../index.html"><img src="../images/Symbol.gif" alt="Logo" class="logo" /></a> -->
+<br />
+<br />
+                <ul class="list">
+                    <li><a class="active" href="../index.html">Home</a></li>
+                    <li><a class="active"  href="./artists.html">Artists</a></li>
+                 
+                    <li>
+                        <a class="active" href="https://australiangalleries.com.au/exhibitions/the-genius-of-japanese-prints-rs23/" target="blank">Current Exhibition</a>
+                    </li>
+                    <li>
+                        <a class="active" href="../html/nextExhibMain.html">Next Exhibition</a>
+                    </li>
+                    <li>
+                        <a class="active" href="./artistsBooks.html">Artist books</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Japanese prints</a>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><a class="active" href="./directors.html">Directors</a></li>
+                            <li><a class="active" href="./aboutUs.html">About Us</a></li>
+                            <li><a class="active" href="./services.html">Services</a></li>
+                            <li><a class="active" href="./contact.html">Contact</a></li>
+                            <!-- <li><a class="active" href="#">relevant links</a></li> -->
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        var mymap = L.map("mapid").setView([-31.9483041,115.8630046], 17);
+        const attribution =
+            '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';
+
+        const tileUrl = "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png";
+        const tiles = L.tileLayer(tileUrl, {
+            attribution
+        });
+        tiles.addTo(mymap);
+
+        // Making a marker with a custom icon
+        // const issIcon = L.icon({
+        //     iconUrl: '../images/logo.png',
+        //     iconSize: [50, 32],
+        //     iconAnchor: [25, 16]
+        // });
+
+        var marker = L.marker([-31.9483041,115.8630046]).addTo(mymap);
+
+        var circle = L.circle([-31.9483041,115.8630046], {
+            color: "red",
+            fillColor: "#f03",
+            fillOpacity: 0.5,
+            radius: 20,
+        }).addTo(mymap);
+
+        // var polygon = L.polygon([
+        //     [51.509, -0.08],
+        //     [51.503, -0.06],
+        //     [51.51, -0.047]
+        // ]).addTo(mymap);
+
+        marker.bindPopup("<b>Gallery Central</b><br>12a Aberdeen St, Perth WA 6000").openPopup();
+        // circle.bindPopup("I am a circle.");
+        // polygon.bindPopup("I am a polygon.");
+        // var popup = L.popup()
+        //     .setLatLng([51.5, -0.09])
+        //     .setContent("I am a standalone popup.")
+        //     .openOn(mymap);
+
+        function onMapClick(e) {
+            alert("You clicked the map at " + e.latlng);
+        }
+
+        mymap.on("click", onMapClick);
+
+        var popup = L.popup();
+
+        function onMapClick(e) {
+            popup
+                .setLatLng(e.latlng)
+                .setContent("You clicked the map at " + e.latlng.toString())
+                .openOn(mymap);
+        }
+
+        mymap.on("click", onMapClick);
+    </script>
+    <script src="./artists/ContentPlaceHolders/exhibAppNext-1.js"></script>
+    <script src="./artists/ContentPlaceHolders/slideShow.js"></script>
+    <script src="../js/app.js"></script>
+</body>
+
+</html>

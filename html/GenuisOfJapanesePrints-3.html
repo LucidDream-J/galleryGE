@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" />
+    <link href="../css/styles.css" rel="stylesheet" />
+    <link href="./artists/ContentPlaceHolders/css/exhibStyles.css" rel="stylesheet" />
+    <link href="./artists/ContentPlaceHolders/css/popup.css" rel="stylesheet" />
+    <link href="./artists/ContentPlaceHolders/css/slideShow.css" rel="stylesheet" />
+    <link rel="apple-touch-icon" sizes="120x120" href="../icons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../icons/favicon-16x16.png" />
+    <link rel="manifest" href="./icons/site.webmanifest" />
+    <link rel="mask-icon" href="../icons/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+    <style>
+        #mapid {
+            height: 600px;
+            width: 80%;
+            max-width: 1100px;
+            margin-bottom: 50px;
+            z-index: -1;
+        }
+    </style>
+
+    <title>Gallery East</title>
+</head>
+
+<body>
+    <button class="nav-btn open-btn" title="menu">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <div class="header">
+        <p class="text">Gallery East</p>
+        <a href="../index.html"><img src="../images/Symbol.gif" alt="Logo" class="logomedium"
+                title="Back to home page" /></a>
+    </div>
+    <div id="returnTop" class="hero">
+        <div class="banner">
+            <h1>Ancient and Modern - 3</h1>
+        </div>
+    </div>
+
+    <!-- <div class="header">
+        <p class="text">Gallery East</p>
+        <img src="./images/Symbol.gif" alt="Logo" class="logomedium">
+    </div> -->
+    <h1 class="subHead">
+        The Genuis of Japanese Prints Ancient and Modern
+    </h1>
+    <h2>11 August – 1  September  2023</h2>
+    <p></p>
+    <div class="cardExhib">
+        <div id="header" class="card-header animated-bg">
+            &nbsp;
+        </div>
+        <div class="card-content">
+            <h3 class="heading-tertiary u-margin-bottom-small">
+                The Genuis of Japanese Prints Ancient and Modern
+            </h3>
+            <h2 id="title" class="heading-secondary u-margin-bottom-small"></h2>
+           
+            <p class="popup__text" id="excerpt">excerpt</p>
+            <h4 class="card-title animated-bg animated-bg-text">
+                &nbsp;
+            </h4>
+            <p class="card-excerpt">
+                &nbsp;
+                <span class="animated-bg animated-bg-text">&nbsp;</span>
+                <span class="animated-bg animated-bg-text">&nbsp;</span>
+                <span class="animated-bg animated-bg-text">&nbsp;</span>
+            </p>
+            <h4 id="statement">&nbsp;</h4>
+            <p class="statement"></p>
+            <div class="author">
+                <div class="profile-img animated-bg" id="profile_img">
+                    &nbsp;
+                </div>
+                <div class="author-info">
+                    <strong class="animated-bg animated-bg-text" id="name">&nbsp;</strong>
+                    <small class="animated-bg animated-bg-text" id="date">&nbsp;</small>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <a href="#popup" class="btn">View now!</a> -->
+
+    <div class="popup" id="popup">
+        <div class="popup__content slideshow">
+            <!-- Slideshow container -->
+
+            <div class="slideshow-container">
+                <h3 class="heading-tertiary u-margin-bottom-small">
+                    The Genuis of Japanese Prints Ancient and Modern <br />
+                    11 August &mdash; 1  September  2023
+                </h3>
+                <!-- 50%-width images with number and caption text and zoomIn zoomOut-->
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 21</div>
+                    <img src="../images/2023JpImages/Cat 43.jpg" style="width: 100%;" />
+                    <div class="text">
+                        Cat 43: Katsunori HAMANISHI (b.1949, Japan)<br />
+                        <p>One of the world’s acknowledged masters of the most demanding of all printing techniques, the mezzotint. His work is 
+                             represented in the collections of the Museum of Modern Art, the Metropolitan Museum of Art, The British Museum, Hokkaido 
+                              Museum of Art, Japan, The Art Institute of Chicago, Cleveland Museum of Art, The Fine Arts Museum of San Francisco, 
+                               Library of Congress, Washington D.C.</p>
+                        
+                            <p><strong> Pickled Plum Pot, 2002</strong></p>
+                            <p>original mezzotint print A/P 2/7<br />
+                                44 x 39. 4 cm </p>
+                        
+                            <p>    $ 2950
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 21</div>
+                    <img src="../images/2023JpImages/Cat 44.jpg" style="width: 100%;" />
+                    <div class="text">
+                        Cat 44:  Katsunori HAMANISHI (b.1949, Japan)<br />
+                    
+                        <p> <strong>Ex Libris: Kimono</strong></p>
+                        <p>
+                            original mezzotint print, Ed. 13/70<br />
+                            28 x 21.5  cm<br />
+                            <br />
+                            $ 495
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 21</div>
+                    <img src="../images/2023JpImages/Cat 45.jpg" style="width: 100%;" />
+                    <div class="text">
+                        Cat 45: Katsunori HAMANISHI (b.1949, Japan)<br />
+                    
+                        <p> <strong>Ex Libris: Kimono; winter bamboo</strong></p>
+                        <p>
+                            original mezzotint print<br />
+                            21.5 x 28 cm   cm<br />
+                            <br />
+                            $ 495
+                        </p>
+                    </div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 21</div>
+                    <img src="../images/2023JpImages/Cat 46.webp" style="width: 100%;" />
+                    <div class="text">
+                        Cat 46:  Katsunori HAMANISHI (b.1949, Japan)<br />
+                    
+                        <p> <strong>Situation # 24, 1988</strong></p>
+                        <p>
+                            original mezzotint print, Ed.  8/50<br />
+                            60 x 45 cm <br />
+                            <br />
+                            $ 2500
+                        </p>
+                    </div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">5 / 21</div>
+                    <img src="../images/2023JpImages/Cat 47.webp" style="width: 100%;" />
+                    <div class="text">
+                        Cat 47: Katsunori HAMANISHI (b.1949, Japan)<br />
+                    
+                        <p> <strong>Division – Work No. 42</strong></p>
+                        <p>
+                            original mezzotint print, Ed.  43/50<br />
+                            74.5 x 53.3 cm <br />
+                            <br />
+                            $ 2750
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">6 / 21</div>
+                    <img src="../images/2023JpImages/Cat 48.jpg"style="width: 100%;" />
+                    <div class="text">
+                        Cat 48: Katsunori HAMANISHI (b.1949, Japan)<br />
+                    
+                        <p> <strong>Cluster Amaryllis, 2019</strong></p>
+                        <p>
+                            original mezzotint print, Ed. 22/50<br />
+                            63.5 x 45  cm <br />
+                            <br />
+                            $ 3000
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">7 / 21</div>
+                    <img src="../images/2023JpImages/Cat 49.jpg" style="width: 100%;" />
+                    <div class="text">
+                        Cat 49: Katsunori HAMANISHI (b.1949, Japan)<br />
+                    
+                        <p> <strong>Hokusai Kimono, 2017</strong></p>
+                        <p>
+                            original mezzotint print, Ed.  63/70<br />
+                            30 x 24.75 cm <br />
+                            <br />
+                            $ 2200
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">8 / 21</div>
+                    <img src="../images/2023JpImages/Cat 50-min.jpg" style="width: 100%;" />
+                    <div class="text">
+                        Cat 50: Katsunori HAMANISHI (b.1949, Japan)<br />
+                    
+                        <p> <strong>Kimono No.2, 2011</strong></p>
+                        <p>
+                            original mezzotint print, Ed. 43/70<br />
+                            45 x 45 cm <br />
+                            <br />
+                            $ 2500
+                        </p>
+                    </div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">9 / 21</div>
+                    <img src="../images/2023JpImages/Cat 30.jpg" style="width: 100%;" />
+                    <div class="text">
+                        Cat 51: Lynita SHIMIZU (b. 1952)<br />
+                        <p>Born in Pennsylvania, Lynita Shimizu graduated in Westminster College and the University of Hong Kong before moving to Japan 
+                             to focus on woodblock printing where she studied with  traditional artist, Tomikichiro Tokuriki and contemporary print 
+                              maker, Yoshisuke Funasake..</p>
+                       
+                            <p><strong>Mama’ Yama (My Mountain), 2019</strong></p>
+                            <p>woodblock print, Ed. 4 / 16<br />
+                                37 x 50.5 cm</p>
+                        
+                            <p>    $ 1100
+                        </p>
+                    </div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">10 / 21</div>
+                    <img src="../images/2023JpImages/Cat 52-min.jpg" style="width: 100%;" />
+                    <div class="text">
+                        Cat 52: Shigeki KURODA (b. 1953)<br />
+                        <p>Using fast moving bicycles ridden by seemingly only umbrellas, Kuroda is famous for his depictions of the rapid movement of 
+                             life in modern Tokyo.</p>
+                      
+                            <p><strong>Time Navigation c.2010</strong></p>
+                                <p>etching & aquatint, Ed. 34/70<br />
+                                    28 x 46 cm </p>
+                            <p>   $ 1750
+                        </p>
+                    </div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">11 / 21</div>
+                    <img src="../images/2023JpImages/Cat 53.jpg" style="width: 100%;" />
+                    <div class="text">
+                        Cat 53: Shigeki KURODA (b. 1953)<br />
+                      
+                            <p><strong>Time Difference c.2016</strong></p>
+                                <p>etching & aquatint, Ed. 3/30<br />
+                                    43 x 52.5 cm </p>
+                            <p>   $ 1500
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">12 / 21</div>
+                    <img src="../images/2023JpImages/Cat 54.jpg" style="width: 100%;" />
+                    <div class="text">
+                        Cat 54: Shigeki KURODA (b. 1953)<br />
+                      
+                        <p><strong>Time Difference c.2016</strong></p>
+                            <p>etching & aquatint, Ed. 3/30<br />
+                                43 x 52.5 cm </p>
+                        <p>   $ 1500
+                    </p>
+                    </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">13 / 21</div>
+                    <img src="../images/2023JpImages/Cat 55.jpg" style="width: 100%;" />
+                    <div class="text">
+                        Cat 55: Shigeki KURODA (b. 1953)<br />
+                      
+                        <p><strong>Wa", (Harmony), 2000 – 2020</strong></p>
+                            <p>etching & aquatint, Ed. 100/200<br />
+                                27 x 20 cm</p>
+                        <p>   $ 550
+                    </p>
+                    </div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">14 / 21</div>
+                    <img src="../images/2023JpImages/Cat 56.jpg" style="width: 100%;" />
+                    <div class="text">
+                        Cat 56: Shigeki KURODA (b. 1953)<br />
+                      
+                        <p><strong>Dawn 2000 – 2020</strong></p>
+                            <p>etching & aquatint, Ed. 101/200	<br />
+                                17.8 x 21.6 cm </p>
+                        <p>   $ 495
+                    </p>
+                    </div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">15 / 21</div>
+                    <img src="../images/2023JpImages/Cat 57.jpg" style="width: 100%;" />
+                    <div class="text">
+                        Cat 57: Shigeki KURODA (b. 1953)<br />
+                      
+                        <p><strong>Kaze (wind) 2000 – 2020</strong></p>
+                            <p>etching & aquatint, Ed. 59/100<br />
+                                30 x 21 cm</p>
+                        <p>    $ 660
+                    </p>
+                    </div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">16 / 22</div>
+                    <img src="../images/2023JpImages/Cat 58.jpg" style="width: 100%;" />
+                    <div class="text">
+                        Cat 58: Takahiko HA YA SHI (b. 1961)<br />
+                        <p>Takahiko Hayashi (b. 1961) is an award-winning artist with a strong social media following and exhibitions across Japan and 
+                             also in Portland planned for this year. His practice focuses on copperplate prints but also includes works on parchment 
+                              paper, thread collages, ink drawings, glass art, and woodblocks.</p>
+                            <p><strong>91-KAOSE-4P, c.2003</strong></p>
+                                 <p>intaglio etching, Ed. 8/20<br />
+                                    79 x 107 cm</p>
+                         
+                                <p>    $ 1500
+                        </p>
+                    </div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">17 / 21</div>
+                    <img src="../images/2023JpImages/Cat 59.jpg" style="width: 100%;" />
+                    <div class="text">
+                        Cat 59: Isao IKEGAMI (b. 1938)<br />
+                        <p>Ikegami graduated from Musashino Art Academy in Tokyo in 1960 and worked as a graphic designer until the 1980s. He has been 
+                             exhibiting his original prints since the 1980s with regular exhibits at the prestigious CWAJ (College Women's Association 
+                              of Japan) as well as exhibits at the Tokyo Metropolitan Art Museum, Gallery Tamura in Hiroshima, Kanagawa Prefectural 
+                               Gallery, Tsutaya Gallery in Kyoto, and many others. Ikegami's work is in the collections of the Rockefeller Foundation, 
+                                the Singapore National Museum, the Art Gallery of New South Wales, Bank of America, and many other collections.</p>
+                            <p><strong>Shin (Depth) 1985</strong></p>
+                                 <p>silkscreen print, Ed. 30/35<br />
+                                    59 x 76 cm</p>
+                         
+                                <p>  $ 1750
+                        </p>
+                    </div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">18 / 21</div>
+                    <img src="../images/2023JpImages/Cat 60.jpg" style="width: 100%;" />
+                    <div class="text">
+                        Cat 60: Shuji WAKO (b. 1953)<br />
+                        <p>He describes his images of Japanese traditional motifs and crafts as expressing his inner sense of Japanese tradition seen 
+                             through modern eyes. His have been exhibited throughout Japan and extensively abroad and can be found  are in the 
+                              collections of the British Museum, Rockefeller Foundation and the Tolman Collection of modern Japanese prints</p>
+                            <p><strong>Take Two, 2000</strong></p>
+                                 <p> lithograph,  Ed. 4/100<br />
+                                    81 x 63.5 cm</p>
+                         
+                                <p> $ 2750
+                        </p>
+                    </div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">19 / 21</div>
+                    <img src="../images/2023JpImages/Cat 61.jpg" style="width: 100%;" />
+                    <div class="text">
+                        Cat 61: Shuji WAKO (b. 1953)<br />
+                            <p><strong> Circle and Top, 1989</strong></p>
+                                 <p> lithograph,  Ed. 4/90 <br />
+                                    42.8 x 31.5 cm</p>
+                         
+                                <p> $ 2200
+                        </p>
+                    </div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">20 / 21</div>
+                    <img src="../images/2023JpImages/Cat 62.jpg" style="width: 100%;" />
+                    <div class="text">
+                        Cat 62:Shuji WAKO (b. 1953)<br />
+                        <p><strong>  Hanging in the Balance, 1989</strong></p>
+                             <p> lithograph,  Ed. 60, AP <br />
+                                57 x 76 cm</p>
+                     
+                            <p> $ 2500
+                    </p>
+                    </div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">21 / 21</div>
+                    <img src="../images/2023JpImages/Cat 63.jpg" style="width: 100%;" />
+                    <div class="text">
+                        Cat 63: Shuji WAKO (b. 1953)<br />
+                        <p><strong> In Balance, c.1989</strong></p>
+                             <p> lithograph,  Ed. AP<br />
+                                76  x 59 cm</p>
+                     
+                            <p> $ 2500
+                    </p>
+                    </div>
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)"> &#10094;</a>
+                <a class="next" onclick="plusSlides(1)"> &#10095;</a>
+            </div>
+            <br />
+
+            <!-- The dots/circles -->
+            <div style="text-align: center;">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+                <span class="dot" onclick="currentSlide(7)"></span>
+                <span class="dot" onclick="currentSlide(8)"></span>
+                <span class="dot" onclick="currentSlide(9)"></span>
+                <span class="dot" onclick="currentSlide(10)"></span>
+                <span class="dot" onclick="currentSlide(11)"></span>
+                <span class="dot" onclick="currentSlide(12)"></span>
+                <span class="dot" onclick="currentSlide(13)"></span>
+                <span class="dot" onclick="currentSlide(14)"></span>
+                <span class="dot" onclick="currentSlide(15)"></span>
+                <span class="dot" onclick="currentSlide(16)"></span>
+                <span class="dot" onclick="currentSlide(17)"></span>
+                <span class="dot" onclick="currentSlide(18)"></span>
+                <span class="dot" onclick="currentSlide(19)"></span>
+                <span class="dot" onclick="currentSlide(20)"></span>
+                <span class="dot" onclick="currentSlide(21)"></span>
+            </div>
+
+            <!-- //////////SlideShow end ///////// -->
+
+            <div class="popup__left">
+                <!-- <img src="../images/Symbol.gif" alt="art photo" class="popup__img" /> -->
+                <!-- <div class="space"></div> -->
+            </div>
+            <div class="popup__right">
+                <!-- <a href="#returnTop" class="popup__close">&times;</a> -->
+                <a href="./nextExhibMain.html" class="popup__close">&times;</a>
+            </div>
+        </div>
+        <img src="../images/Symbol.gif" alt="art photo" class="popupS__img" />
+    </div>
+
+    <div>
+        <h1 class="subHead">
+            Opening &mdash; 6pm on Friday the 11 August 2023
+            <h2 class="whiteText" >until Friday the 1 September &mdash; opening times Tuesday  &mdash; Friday, 11am &mdash; 5 pm, Saturday, 11am &mdash; 5 pm</h2>
+            <h3 class="whiteText">12a Aberdeen St, Perth WA 6000</h3>
+        </h1>
+        <a href="https://www.google.com/maps/place/Gallery+Central/@-31.9483041,115.8610046,17z/data=!4m15!1m8!3m7!1s0x2a32bbeb2db72fe9:0xf86dde7d7d86599a!2sGallery+Central!8m2!3d-31.9483041!4d115.8631933!10e5!16s%2Fg%2F1td6jry5!3m5!1s0x2a32bbeb2db72fe9:0xf86dde7d7d86599a!8m2!3d-31.9483041!4d115.8631933!16s%2Fg%2F1td6jry5?entry=ttu"
+            target="blank">
+            <p><span>view directions on google-maps</span></p>
+        </a>
+    </div>
+
+    <div id="mapid"></div>
+    <a href="#popup" class="btn">View Online</a>
+
+    <footer id="footer" class="footer glass">
+        <div class="container">
+            <div class="nav-footer">
+                <h3>Art Evaluations</h3>
+                <nav class="menu">
+                    <a href="#">History of Ownership </a>
+                    <a href="#">Provennonce</a>
+                    <a href="#">Policies</a>
+                    <a href="#">Help</a>
+                </nav>
+            </div>
+            <div class="nav-footer">
+                <h3>Art Buying</h3>
+                <nav class="menu">
+                    <a href="#">Trust & Safety</a>
+                    <a href="#">Buying Credit</a>
+                    <a href="#">Art Cards</a>
+                    <a href="#">Art Prints</a>
+                    <a href="#">Buying Events <span class="new">New</span> </a>
+                </nav>
+            </div>
+            <div class="nav-footer">
+                <h3>Art Consultation</h3>
+                <nav class="menu">
+                    <a href="#">What is it about?</a>
+                    <a href="#">Is it the right investment?</a>
+                    <a href="#">Responsible collecting?</a>
+                    <a href="#">Organise your exhibition</a>
+                </nav>
+            </div>
+            <div class="nav-footer">
+                <nav class="social-nav">
+                    <a href="https://www.artstation.com/"><span>artstation</span></a>
+                    <a href="https://www.etsy.com/"><span>etsy</span></a>
+                    <a href="http://www.linkedin.com/"><span>linkedIn</span></a>
+                </nav>
+                <nav class="menu">
+                    <a href="#">Terms</a>
+                    <a href="#">Privacy</a>
+                    <a href="#">Site map</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#footer" class="footerBtn">Services, Terms, Privacy & more</a>
+    <img class="SHIBARAKU" src="../images/SHIBARAKUSm.jpg" alt="SHIBARAKU" />
+    <div class="nav nav-black">
+        <div class="nav nav-red">
+            <div class="nav nav-white">
+                <button class="nav-btn close-btn">
+                    <i class="fas fa-times closeSize"></i>
+                </button>
+
+                                <!-- <a href="../index.html"><img src="../images/Symbol.gif" alt="Logo" class="logo" /></a> -->
+                                <br />
+                                <br />
+                                                <ul class="list">
+                                                    <li><a class="active" href="../index.html">Home</a></li>
+                                                    <li><a class="active"  href="./artists.html">Artists</a></li>
+                                                 
+                                                    <li>
+                                                        <a class="active" href="https://australiangalleries.com.au/exhibitions/the-genius-of-japanese-prints-rs23/" target="blank">Current Exhibition</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="active" href="../html/nextExhibMain.html">Next Exhibition</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="active" href="./artistsBooks.html">Artist books</a>
+                                                    </li>
+                                
+                                                    <li>
+                                                        <a href="#">Japanese prints</a>
+                                                    </li>
+                                                    <li>
+                                                        <ul>
+                                                            <li><a class="active" href="./directors.html">Directors</a></li>
+                                                            <li><a class="active" href="./aboutUs.html">About Us</a></li>
+                                                            <li><a class="active" href="./services.html">Services</a></li>
+                                                            <li><a class="active" href="./contact.html">Contact</a></li>
+                                                            <!-- <li><a class="active" href="#">relevant links</a></li> -->
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        var mymap = L.map("mapid").setView([-31.9483041,115.8630046], 17);
+        const attribution =
+            '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';
+
+        const tileUrl = "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png";
+        const tiles = L.tileLayer(tileUrl, {
+            attribution
+        });
+        tiles.addTo(mymap);
+
+        // Making a marker with a custom icon
+        // const issIcon = L.icon({
+        //     iconUrl: '../images/logo.png',
+        //     iconSize: [50, 32],
+        //     iconAnchor: [25, 16]
+        // });
+
+        var marker = L.marker([-31.9483041,115.8630046]).addTo(mymap);
+
+        var circle = L.circle([-31.9483041,115.8630046], {
+            color: "red",
+            fillColor: "#f03",
+            fillOpacity: 0.5,
+            radius: 20,
+        }).addTo(mymap);
+
+        // var polygon = L.polygon([
+        //     [51.509, -0.08],
+        //     [51.503, -0.06],
+        //     [51.51, -0.047]
+        // ]).addTo(mymap);
+
+        marker.bindPopup("<b>Gallery Central</b><br>12a Aberdeen St, Perth WA 6000").openPopup();
+        // circle.bindPopup("I am a circle.");
+        // polygon.bindPopup("I am a polygon.");
+        // var popup = L.popup()
+        //     .setLatLng([51.5, -0.09])
+        //     .setContent("I am a standalone popup.")
+        //     .openOn(mymap);
+
+        function onMapClick(e) {
+            alert("You clicked the map at " + e.latlng);
+        }
+
+        mymap.on("click", onMapClick);
+
+        var popup = L.popup();
+
+        function onMapClick(e) {
+            popup
+                .setLatLng(e.latlng)
+                .setContent("You clicked the map at " + e.latlng.toString())
+                .openOn(mymap);
+        }
+
+        mymap.on("click", onMapClick);
+    </script>
+    <script src="./artists/ContentPlaceHolders/exhibAppNext-3.js"></script>
+    <script src="./artists/ContentPlaceHolders/slideShow.js"></script>
+    <script src="../js/app.js"></script>
+</body>
+
+</html>
