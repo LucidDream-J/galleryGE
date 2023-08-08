@@ -1,10 +1,11 @@
-const buyingArt = document.querySelector(".buyingArt");
-const valuations = document.querySelector(".valuations");
-const consultations = document.querySelector(".consultations");
-const leftPopUp = document.querySelector(".popup__left");
+const buyingArt = document.querySelector('.buyingArt');
+const valuations = document.querySelector('.valuations');
+const consultations = document.querySelector('.consultations');
+const leftPopUp = document.querySelector('.popup__left');
+const heading =  document.querySelector('.heading-tertiary');
 
 const content = [
-  `<h1 class="subHead">
+  `<h1 class="modalsubHead">
               Buying Art
           </h1>
            
@@ -42,10 +43,10 @@ const content = [
                     <br>
                     <br>
                   </p>
-                  <table width="100%" border="0" bgcolor="#ff0000">
+                  <table width="100%" border="0" >
                     <tr> 
-                      <td><font color="#FFFFFF" size="2" face="Verdana, Arial, Helvetica, sans-serif">Please 
-                        Email Your enquiry/order to<a href="mailto:admin@galleryeast.com.au"> 
+                      <td><font color="#666666" size="3" face="Verdana, Arial, Helvetica, sans-serif"><strong>Please 
+                      Email Your enquiry/order to</strong> <a href="mailto:admin@galleryeast.com.au"> 
                         admin@galleryeast.com.au</a></font></td>
                     </tr>
                   </table>
@@ -55,7 +56,7 @@ const content = [
         
             `,
 
-  ` <h1 class="subHead">
+  ` <h1 class="modalsubHead">
               Valuations
           </h1>
         <table border="0" width="80%"" max-width="800"min-width="360">
@@ -428,7 +429,7 @@ const content = [
              `,
 
   `
-   <h1 class="subHead">
+   <h1 class="modalsubHead">
               Consultations
           </h1><div class="services-container">
                 <div class="service">
@@ -448,7 +449,7 @@ const valuation = content[1];
 const consultation = content[2];
 
 function showInfo(data) {
-  leftPopUp.innerHTML = "";
+  // leftPopUp.innerHTML = "";
   leftPopUp.innerHTML = data;
 }
 
