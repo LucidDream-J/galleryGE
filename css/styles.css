@@ -118,7 +118,10 @@ body {
   justify-content: center;
   min-height: 100vh;
 }
-
+.modalsubHead{
+   color: black;
+}
+          
 .subHead {
   font-size: 2.5rem;
   color: white;
@@ -514,7 +517,7 @@ body {
   flex-wrap: wrap;
 }
 
-/* ///////////////// Durectors/////////////////// */
+/* ///////////////// Directors/////////////////// */
 
 .directors-content {
   margin: auto;
@@ -641,6 +644,15 @@ body {
   min-width: 360px;
 }
 
+.centering{
+  margin: 0 auto;
+ 
+}
+
+.addTo{
+  /* text-align: center; */
+  z-index: 100;
+}
 /* ///////// End of  POPUP component //////////// */
 
 .icons {
@@ -1013,6 +1025,82 @@ h3 {
   margin: 10px 0;
 }
 
+/* ////////////////////Model Window //////////////////////*/
+
+.modal form{
+  padding: 2rem;
+  margin: 0 auto;
+}
+
+.show-modal {
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  background-color: #fff;
+  color: #444;
+  border-radius: 2rem;
+  cursor: pointer;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+}
+
+.close-modal {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 5rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+/* CLASSES TO MAKE MODAL WORK */
+.hidden {
+  display: none;
+}
+.modal p{
+width: 55%;
+margin: 0 auto;
+/* position: absolute;
+top: 22%;
+left: 50%;
+transform: translate(-50%, -50%);
+margin: 3rem 2rem 5rem 2rem; */
+}
+.modal form{
+  /* margin: 3rem 1rem ; */
+  margin: 0 auto;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+
+  background-color: white;
+  padding: 6rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  margin: auto 0;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+/* ////////////////////End Model Window //////////////////////*/
 /*/////////////////// form Send //////////////////////////  */
 #status {
   width: 90%;
