@@ -60,6 +60,7 @@
   </head>
 
   <body>
+    <div id="returnTop"></div>
     <div id="container-whole">
       <div class="header">
         <p class="text">Gallery East</p>
@@ -116,9 +117,30 @@
               />
             </div>
             <div class="content-Ge">
-              <h1>Current Exhibition</h1>
+              <h1>Recent Exhibitions</h1>
               <p>Sydney, 16 May 2023&ndash; Online</p>
             </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="destination">
+            <div class="thumbnail">
+              <img src="./images/artistsImages/japanesePrints/floraFauna/MEL21.jpg" alt="japanese Prints" />
+            </div>
+            <div class="content-Ge">
+              <h1>Recent Accusations</h1>
+              <p>New Japanese Prints &ndash; acquired or coming to Galley East</p>
+            </div>
+            <div class="message">
+              <h3>Under Construction</h3>
+              <div class="icons">
+                  <i class="fas fa-pencil-ruler"></i>
+                  <i class="fas fa-tools"></i>
+              </div>
+              <p class="message-paragraph">
+                  Currently under construction
+              </p>
+          </div>
           </div>
         </a>
         <a href="./html/nextExhibMain.html">
@@ -145,7 +167,7 @@
               </div>
           </div>
       </a>
-        <a href="#">
+        <!-- <a href="#">
           <div class="destination">
             <div class="thumbnail">
               <img src="./images/artistsImages/japanesePrints/floraFauna/MEL44sm.jpg" alt="japanese Prints" />
@@ -165,7 +187,7 @@
               </p>
           </div>
           </div>
-        </a>
+        </a> -->
         <a href="./html/artistsBooks.html">
           <div class="destination">
             <div class="thumbnail">
@@ -197,8 +219,8 @@
             <div class="content-Ge">
               <h1>About Us</h1>
               <p>
-                Japanese art and those artists influenced by Japanese
-                                    aesthetics
+                Japanese art and those artists influenced by 
+                 Japanese aesthetics
               </p> 
             </div>
           </div>
@@ -226,7 +248,9 @@
             </div>
           </div>
         </a>
-        <a href="https://galleryeast.com.au/" target="blank">
+
+        <a class="show-modal" href="#returnTop">
+
           <div class="destination">
             <div class="thumbnail">
               <img src="./images/Rchive.png" alt="archived site" />
@@ -234,13 +258,60 @@
             <div class="content-Ge">
               <h1>Archived Site</h1>
               <p>
-                Link leads to <strong>archived content</strong> on an earlier <strong>Gallery East Site:</strong>
+                Link leads to <strong>archived content</strong> on 
+                 an earlier <strong>Gallery East Site:</strong>
               </p>
             </div>
           </div>
         </a>
       </div>
     </div>
+
+  <!-- Begin Modal -->
+  <div class="modal hidden">
+    <button class="close-modal">&times;</button>
+    <h1>Archived Site Information</h1>
+    <p>
+     For any information relating to the previous Gallery East site please contact the gallery via the form provided below with the particulars of your enquiry. Thank you.
+ 
+    </p>
+  
+    <section id="contact" class="contact">
+      <h2>Contact Us:</h2>
+      <form action="https://formspree.io/f/mrgweqna" method="POST" id="my-form">
+        <div class="form-container">
+          <input type="hidden" name="_next" value="https://www.galleryeast.com.au/thankYou.html" />
+          <input type="hidden" name="_subject" value="new email" />
+          <div class="field">
+            <label>Name:</label>
+            <input type="text" name="name" placeholder="Name" required />
+          </div>
+          <div class="field">
+            <label>Phone Number:</label>
+            <input type="tel" name="number" placeholder="Phone Number" />
+          </div>
+          <div class="field w-100">
+            <label>Email:</label>
+            <input type="email" name="email" placeholder="Email" required />
+          </div>
+          <div class="field w-100">
+            <label>Message:</label>
+            <textarea cols="30" rows="3" name="message" placeholder="Your Message"></textarea>
+          </div>
+        </div>
+        <!--.form-container-->
+        <div class="submit-form">
+          <input type="submit" class="button" value="Send" />
+        </div>
+      </form>
+      <div id="status"></div>
+    </section>
+  </div>
+
+  <div class="overlay hidden"></div>
+<!--  end modal -->
+
+
     <section class="section-blurb">
 
       <div class="blurb">
@@ -264,6 +335,7 @@
         </div>
       </div>
     </section>
+
     <div class="hero bottom-index">
       <div class="banner">
         <h1 class="text">gallery east</h1>
@@ -287,7 +359,8 @@
             <a href="#">Buying Credit</a>
             <a href="#">Art Cards</a>
             <a href="#">Art Prints</a>
-            <a href="#">Buying Events <span class="new">New</span> </a>
+            <a href="#">Buying Events <span class="new">New</span> 
+             </a>
           </nav>
         </div>
         <div class="nav-footer">
@@ -334,7 +407,7 @@
             <li><a class="active" href="./html/artists.html">Artists</a></li>
             <li>
               <a class="active" href="https://australiangalleries.com.au/exhibitions/the-genius-of-japanese-prints-rs23/" target="blank"
-                >Current Exhibition</a>
+                >Recent Exhibitions</a>
             </li>
             <li>
               <a class="active" href="./html/nextExhibMain.html"
@@ -346,7 +419,7 @@
             </li>
             <li>
               <a href="#"
-                >Japanese prints</a>
+                >Recent Accusationss</a>
             </li>
             <li>
               <a class="active" href="./html/artistsBooks.html">Artist books</a>
@@ -371,7 +444,9 @@
         </div>
       </div>
     </div>
+
     <!-- </div> -->
     <script src="./js/app.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
